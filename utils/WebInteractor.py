@@ -86,7 +86,7 @@ class WebInteractor:
     def click_control(self, control_name):
         click_control(self.window_name, f"{CONTROLS}\\{control_name}.png")
 
-    def zoom_out_chrome(times=2):
+    def zoom_out_chrome(self, times=2):
         """
         Zooms out in Google Chrome by simulating 'Ctrl + -' keypresses.
 
@@ -95,6 +95,11 @@ class WebInteractor:
         for _ in range(times):
             pyautogui.hotkey("ctrl", "-")
             time.sleep(0.2)  # Small delay to ensure the zoom registers
+
+    def login(self, login_button, login_dialogue):
+        self.click_control(login_button)
+        wait_for_control_to_be_visible(login_dialogue)
+
 
 def capture_window(window_name):
     # Find the window handle
@@ -200,12 +205,21 @@ def click_control(window_name, control_image_path, threshold=0.8):
     print(f"Clicked control at ({screen_x}, {screen_y})")
     return True
 
+def wait_for_control_to_be_visible(control, window_name, timeout=10):
+    attempts = 0
+    while attempts <= timeout:
+        if not find_control(window_name, control):
+            time.sleep(1)
+        else:
+            return True
+    return False
+
 if __name__ == "__main__":
     # Example usage
     web_interactor = WebInteractor()
 
     web_interactor.activate_browser()  # Focus the browser window
-    web_interactor.zoom_out_chrome()
+    # web_interactor.zoom_out_chrome()
     time.sleep(3)
     web_interactor.click_control("nba_button")
     time.sleep(1)
