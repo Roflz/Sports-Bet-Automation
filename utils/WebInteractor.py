@@ -11,6 +11,7 @@ import ctypes
 import numpy as np
 import cv2
 
+from Exceptions.exceptions import ControlNotFoundException
 from config import CONTROLS, PROJECT_PATH, TEMP
 
 
@@ -96,9 +97,11 @@ class WebInteractor:
             pyautogui.hotkey("ctrl", "-")
             time.sleep(0.2)  # Small delay to ensure the zoom registers
 
-    def login(self, login_button, login_dialogue):
+    def login(self, login_button, login_dialogue, login_x, username, password):
         self.click_control(login_button)
-        wait_for_control_to_be_visible(login_dialogue)
+        wait_for_control_to_be_visible(login_dialogue, self.window_name)
+        click_control(self.window_name, login_x)
+        type([username, "tab", password, "enter"], interval = 1)
 
 
 def capture_window(window_name):
@@ -212,7 +215,20 @@ def wait_for_control_to_be_visible(control, window_name, timeout=10):
             time.sleep(1)
         else:
             return True
-    return False
+    raise ControlNotFoundException(f"Control '{control}' not found in window '{window_name}' within {timeout} seconds.")
+
+def type(keys, interval=0.05):
+    """
+    Inputs a sequence of keypresses.
+
+    Args:
+        keys (list or str): A list of keys or a string of characters to type.
+        interval (float): Time delay between keypresses.
+    """
+    for key in keys:
+        pyautogui.press(key)
+        time.sleep(interval)  # Optional delay between keypresses
+
 
 if __name__ == "__main__":
     # Example usage
@@ -222,7 +238,8 @@ if __name__ == "__main__":
     # web_interactor.zoom_out_chrome()
     time.sleep(3)
     web_interactor.click_control("nba_button")
-    time.sleep(1)
+    time.sleep(2)
+    web_interactor.login("login_button", "login_dialogue", "login_x", "ROTFLEZ", "56dFLJ4QvbHcz2e")
 
     # Example: Click an element by its aria-label
     web_interactor.click_element_by_aria_label('NBA')
