@@ -316,7 +316,7 @@ def move_mouse_by(x_offset, y_offset):
     # Move the mouse to the new position
     pyautogui.moveTo(new_x, new_y)
 
-def click_until_see_and_click_other_at_relative_point(control_image_path, window_name, click_x_rel, click_y_rel, threshold=0.8, max_attempts=50, delay=0.3):
+def click_point_til_control_visible_click_control(control_image_path, window_name, click_x_rel, click_y_rel, threshold=0.8, max_attempts=50, delay=0.3):
     """
     Clicks at a specific point relative to the window until control 2 is visible, then clicks control 2.
 
@@ -547,3 +547,13 @@ def is_bet_in_csv(player, bet_type, game, filename="output.csv"):
         # If the file does not exist, assume no previous bets are saved
         return False
     return False
+
+def wait_and_click(self, control_path, bet_dict, failure_message, timeout=5, threshold=0.95):
+    """Waits for a control to be visible, then clicks it. Logs failure and returns False if unsuccessful."""
+    if not wait_for_control_to_be_visible(control_path, self.window_name, timeout=timeout, threshold=threshold):
+        append_dict_to_csv(bet_dict, "results.csv", failure_message)
+        return False
+    if not click_control(self.window_name, control_path, threshold=threshold):
+        append_dict_to_csv(bet_dict, "results.csv", failure_message)
+        return False
+    return True
