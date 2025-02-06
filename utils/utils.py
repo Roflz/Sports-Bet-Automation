@@ -1,3 +1,4 @@
+import csv
 import re
 import subprocess
 import webbrowser
@@ -16,7 +17,7 @@ import cv2
 from pywinauto import Application
 
 from Exceptions.exceptions import *
-from config import TEMP
+from config import TEMP, CONTROLS
 
 
 def find_window_by_partial_title(partial_title):
@@ -112,13 +113,13 @@ def click_control(window_name, control_image_path, threshold=0.8):
     control_location = find_control(window_name, control_image_path, threshold)
     if not control_location:
         print("Control not found, cannot click.")
-        raise ControlNotFoundException(f"Control {control_image_path} not found in window {window_name}")
+        return False
 
     # Get the window position (to adjust relative coordinates)
     hwnd = find_window_by_partial_title(window_name)
     if not hwnd:
         print("Window not found!")
-        raise WindowNotFoundException(f"Window {window_name} not Found")
+        return False
 
     left, top, right, bottom = win32gui.GetWindowRect(hwnd)
 
@@ -143,7 +144,19 @@ def wait_for_control_to_be_visible(control_image_path, window_name, timeout=10, 
             attempts += 1
         else:
             return True
-    raise ControlNotFoundException(f"Control '{control_image_path}' not found in window '{window_name}' within {timeout} seconds.")
+    return False
+
+def wait_for_place_bet_button_to_be_visible(window_name, timeout=10, threshold=0.8):
+    attempts = 0
+    while attempts <= timeout:
+        if not find_control(window_name, f"{CONTROLS}\\bet365\\place_bet_button.png", threshold=threshold):
+            if find_control(window_name, f"{CONTROLS}\\bet365\\price_changed.png", threshold=threshold):
+                return False
+            time.sleep(1)
+            attempts += 1
+        else:
+            return True
+    raise ControlNotFoundException(f"Control 'place_bet_button' not found in window '{window_name}' within {timeout} seconds.")
 
 def wait_for_window_to_be_visible(window_name, timeout=10):
     """
@@ -339,7 +352,7 @@ def click_until_see_and_click_other_at_relative_point(control_image_path, window
 
             if find_control(window_name, control_image_path, threshold):
                 click_control(window_name, control_image_path, threshold)
-                return  # Exit after clicking control 2
+                return True  # Exit after clicking control 2
 
             # If control 2 isn't found, click at the specified relative point
             pyautogui.click(click_x, click_y)  # Click at the calculated position
@@ -351,55 +364,7 @@ def click_until_see_and_click_other_at_relative_point(control_image_path, window
         attempts += 1
 
     # If we exhaust all attempts and find nothing, raise an exception
-    raise ControlNotFoundException(f"Control {control_image_path} was not found after {max_attempts} attempts.")
-
-
-# def preprocess_image(pil_image):
-#     """
-#     Preprocess an image (resize, grayscale, threshold) for better OCR accuracy.
-#
-#     Args:
-#         pil_image (PIL Image): Image to preprocess.
-#
-#     Returns:
-#         np.ndarray: Processed OpenCV image.
-#     """
-#     # Convert PIL image to OpenCV format
-#     img = np.array(pil_image)
-#
-#     # Convert to grayscale
-#     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-#
-#     # Apply adaptive thresholding for better text clarity
-#     thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
-#
-#     return thresh
-#
-#
-# def extract_text_from_image(image):
-#     """
-#     Extracts text from an image using Tesseract OCR.
-#
-#     Args:
-#         image (str or PIL Image): File path to the image or a PIL Image object.
-#
-#     Returns:
-#         str: Extracted text.
-#     """
-#     if isinstance(image, str):
-#         # If a file path is provided, open the image
-#         image = Image.open(image)
-#
-#     # Preprocess the image
-#     # processed_img = preprocess_image(image)
-#
-#     # Convert back to PIL for Tesseract
-#     pil_img = Image.fromarray(image)
-#
-#     # Perform OCR
-#     text = pytesseract.image_to_string(pil_img)
-#
-#     return text
+    return False
 
 def extract_text_from_pillow_image(image):
     """
@@ -519,3 +484,66 @@ def take_screenshot_mss(region):
     with mss.mss() as sct:
         screenshot = sct.grab(region)
         return Image.frombytes("RGB", screenshot.size, screenshot.rgb)
+
+
+def append_dict_to_csv(data_dict, filename, result=None):
+    """
+    Appends data from a dictionary to an existing CSV file, creating headers if necessary,
+    and adding a 'result' column at the end.
+
+    Args:
+        data_dict (dict): The dictionary containing data to be added to the CSV file.
+        filename (str): The name of the CSV file to append to.
+        result (str): The result to append as the 'result' column.
+
+    Returns:
+        None
+    """
+    # Add 'result' to the dictionary
+    if result is not None:
+        data_dict['result'] = result
+
+    # Check if the file exists to determine whether we need to write headers
+    try:
+        with open(filename, mode='r', newline='') as file:
+            pass
+        file_exists = True
+    except FileNotFoundError:
+        file_exists = False
+
+    # Open the file in append mode to add data
+    with open(filename, mode='a', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=data_dict.keys())
+
+        # Write the header if the file is new
+        if not file_exists:
+            writer.writeheader()
+
+        # Write the data from the dictionary as a row
+        writer.writerow(data_dict)
+
+    print(f"Data has been appended to {filename}")
+
+def is_bet_in_csv(player, bet_type, game, filename="output.csv"):
+    """
+    Checks if a bet with the given player, bet type, and game already exists in the CSV file.
+
+    Args:
+        player (str): The player's name.
+        bet_type (str): The bet type (e.g., assists, points).
+        game (str): The game description.
+        filename (str): The name of the CSV file to check.
+
+    Returns:
+        bool: True if a matching bet is found, False otherwise.
+    """
+    try:
+        with open(filename, mode='r', newline='') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                if row['Player'] == player and row['Type'] == bet_type and row['Game'] == game:
+                    return True
+    except FileNotFoundError:
+        # If the file does not exist, assume no previous bets are saved
+        return False
+    return False

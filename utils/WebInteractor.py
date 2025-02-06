@@ -76,31 +76,60 @@ class WebInteractor:
                                        self.window_name, timeout=5)
         click_control(self.window_name, f"{CONTROLS}\\bet365\\nfl\\nfl_button.png")
 
-    def choose_league_nba(self):
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\nba_button.png",
-                                       self.window_name, timeout=5)
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\nba_button.png")
+    def choose_league_nba(self, bet_dict):
+        if not wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\nba_button.png",
+                                       self.window_name, timeout=5):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find nba_button")
+            return False
+        if not click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\nba_button.png"):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find nba_button")
+            return False
+        return True
 
-    def choose_props_nba(self):
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\props_button.png",
-                                       self.window_name, timeout=5, threshold=0.95)
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\props_button.png", threshold=0.95)
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\all_props_button.png",
-                                       self.window_name, timeout=5, threshold=0.95)
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\all_props_button.png", threshold=0.95)
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\player_props_button.png",
-                                       self.window_name, timeout=5, threshold=0.95)
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\player_props_button.png", threshold=0.95)
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\1q_assists_filter_selector.png",
-                                       self.window_name, timeout=5, threshold=0.95)
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\1q_assists_filter_selector.png", threshold=0.95)
+    def choose_props_nba(self, bet_dict):
+        if not wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\props_button.png",
+                                       self.window_name, timeout=5, threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find props_button")
+            return False
+        if not click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\props_button.png", threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find props_button")
+            return False
+        if not wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\all_props_button.png",
+                                       self.window_name, timeout=5, threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find all_props_button")
+            return False
+        if not click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\all_props_button.png", threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find all_props_button")
+            return False
+        if not wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\player_props_button.png",
+                                       self.window_name, timeout=5, threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find player_props_button")
+            return False
+        if not click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\player_props_button.png", threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find player_props_button")
+            return False
+        if not wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nba\\1q_assists_filter_selector.png",
+                                       self.window_name, timeout=5, threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find 1q_assists_filter_selector")
+            return False
+        if not click_control(self.window_name, f"{CONTROLS}\\bet365\\nba\\1q_assists_filter_selector.png", threshold=0.95):
+            append_dict_to_csv(bet_dict, "results.csv", "Bet not made, could not find 1q_assists_filter_selector")
+            return False
+        return True
 
-    def choose_prop_type_nba(self, bet_type):
-        click_until_see_and_click_other_at_relative_point(f"{CONTROLS}\\bet365\\nba\\props\\{bet_type}.png",
-                                                          self.window_name, 1661, 426, max_attempts=5, delay=0.5, threshold=0.9)
+    def choose_prop_type_nba(self, bet_type, bet_dict):
+        if not click_until_see_and_click_other_at_relative_point(f"{CONTROLS}\\bet365\\nba\\props\\{bet_type}.png",
+                                                          self.window_name, 1661, 426, max_attempts=5, delay=0.5, threshold=0.9):
+            append_dict_to_csv(bet_dict, "results.csv", f"Bet not made, could not find {bet_type} prop")
+            return False
+        return True
 
-    def choose_bet_nba(self, player, bet_line, price_target, position):
-        control_location = scroll_until_visible(f"{CONTROLS}\\bet365\\nba\\players\\{player}.png", self.window_name)
+    def choose_bet_nba(self, player, bet_line, price_target, position, bet_dict):
+        if control_location := scroll_until_visible(f"{CONTROLS}\\bet365\\nba\\players\\{player}.png", self.window_name):
+            pass
+        else:
+            append_dict_to_csv(bet_dict, "results.csv", f"Bet not made, could not find player {player}")
+            return False
         if position == 'over':
             screenshot, location = take_screenshot_over(control_location, self.window_name)
         elif position == 'under':
@@ -109,21 +138,32 @@ class WebInteractor:
         odds_in_sportsbook = odds_in_sportsbook.replace('.', '')
         line, price = extract_line_and_price(odds_in_sportsbook)
         bet_line = bet_line.replace('.', '')
-        if line == bet_line and price >= price_target:
+        if line == bet_line and int(price) >= int(price_target):
             pyautogui.click(location)
             time.sleep(1)
             return True
+        append_dict_to_csv(bet_dict, "results.csv", f"Bet not made, line: {player}, bet line: {line}, price: {price}, {position}, did not meet line targets: {player}, bet line: {bet_line}, price target: {price_target}, position: {position}")
         print(f"Odds in sportsbook {odds_in_sportsbook} dont meet betting criteria {bet_line} {price_target}, for {player} {position}, skipping bet")
         return False
 
-    def place_bet_nba(self):
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\place_bet_button.png",
-                                       self.window_name)
-        wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\wager_text.png",
-                                       self.window_name, threshold=0.95)
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\wager_text.png", threshold=0.95)
-        keyboard_input("1")
-        click_control(self.window_name, f"{CONTROLS}\\bet365\\place_bet_button.png", threshold=0.95)
+    def place_bet_nba(self, bet_dict):
+        if wait_for_place_bet_button_to_be_visible(self.window_name):
+            wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\wager_text.png",
+                                           self.window_name, threshold=0.95)
+            click_control(self.window_name, f"{CONTROLS}\\bet365\\wager_text.png", threshold=0.95)
+            keyboard_input("1")
+            click_control(self.window_name, f"{CONTROLS}\\bet365\\place_bet_button.png", threshold=0.95)
+            wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\bet_placed_text.png",
+                                           self.window_name, threshold=0.95)
+            wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\bet_placed_x_button.png",
+                                           self.window_name, threshold=0.95)
+            click_control(self.window_name, f"{CONTROLS}\\bet365\\bet_placed_x_button.png", threshold=0.95)
+            print(f"placed bet ")
+        else:
+            append_dict_to_csv(bet_dict, "results.csv", f"Bet not made, price changed")
+            click_control(self.window_name, f"{CONTROLS}\\bet365\\price_changed_x.png", threshold=0.95)
+            print('price changed, did not make bet.')
+
 
     def choose_player_props(self):
         wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\nfl\\player_props_button.png",
@@ -164,7 +204,7 @@ class WebInteractor:
             # self.sportsbook = 'bet365'
             if book == 'bet365':
                 # Open book and log in
-                # self.login_bet365()
+                self.login_bet365()
                 self.activate_browser()
                 for league in bets[book]:
                     if league == 'afl':
@@ -176,19 +216,36 @@ class WebInteractor:
                                     self.choose_player_props()
                                     # Leave this for now since football season is almost over
                     elif league == 'nba':
-                        self.choose_league_nba()
-                        self.choose_props_nba()
                         for game in bets[book][league]:
                             print(game)
                             for bet_index in range(len(bets[book][league][game])):
+                                # Extract the current bet details
                                 bet_type = bets[book][league][game][bet_index]['Type']
                                 bet_line = bets[book][league][game][bet_index]['Line']
                                 price_target = bets[book][league][game][bet_index]['Price Target']
                                 position = bets[book][league][game][bet_index]['Position']
                                 player = bets[book][league][game][bet_index]['Player']
+                                game = bets[book][league][game][bet_index]['Game']
+
+                                # Check if the bet already exists in the CSV file
+                                if is_bet_in_csv(player, bet_type, game):
+                                    print(
+                                        f"Skipping bet for {player} - {bet_type} - {game} as it's already in the CSV.")
+                                    continue  # Skip to the next bet in the loop
+
+                                # If the bet is not in the CSV file, proceed with the rest of the loop
                                 if 'ht_' in bet_type:
                                     break
+
+                                if not self.choose_league_nba(bets[book][league][game][bet_index]):
+                                    continue
+                                if not self.choose_props_nba(bets[book][league][game][bet_index]):
+                                    continue
+
                                 bet_type = self.parse_bet_type(bet_type)
-                                self.choose_prop_type_nba(bet_type)
-                                if self.choose_bet_nba(player, bet_line, price_target, position):
-                                    self.place_bet_nba()
+                                if not self.choose_prop_type_nba(bet_type, bets[book][league][game][bet_index]):
+                                    continue
+
+                                if self.choose_bet_nba(player, bet_line, price_target, position,
+                                                       bets[book][league][game][bet_index]):
+                                    self.place_bet_nba(bets[book][league][game][bet_index])
