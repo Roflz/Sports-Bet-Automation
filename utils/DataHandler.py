@@ -75,7 +75,6 @@ class DataHandler:
         # Check response status
         if response.status_code == 200:
             data = response.json()  # Parse response JSON
-            print(data)
         else:
             print(f"Request failed with status code {response.status_code}: {response.text}")
 

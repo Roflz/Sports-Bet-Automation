@@ -1,0 +1,58 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.547746032,125,dal,nba,135,bet365,under,0d 0m,max christie,dallas mavericks @ boston celtics,ht_rebounds,3.5,"Halftime bet, not set up for halftime bets yet."
+0.38351049,-105,bos,nba,-105,bet365,under,0d 0m,kristaps porzingis,dallas mavericks @ boston celtics,ht_blocks,2.5,"Halftime bet, not set up for halftime bets yet."
+0.253807094,-110,dal,nba,-105,bet365,under,0d 0m,kyrie irving,dallas mavericks @ boston celtics,ht_points_rebounds,20.5,"Halftime bet, not set up for halftime bets yet."
+0.2652983,-135,dal,nba,-120,bet365,under,0d 0m,kyrie irving,dallas mavericks @ boston celtics,ht_points_assists,22.5,"Halftime bet, not set up for halftime bets yet."
+0.228977644,-110,bos,nba,-110,bet365,under,0d 0m,jayson tatum,dallas mavericks @ boston celtics,ht_points_rebounds,33.5,"Halftime bet, not set up for halftime bets yet."
+0.202029858,-115,bos,nba,-115,bet365,under,0d 0m,jayson tatum,dallas mavericks @ boston celtics,ht_points_assists,31.5,"Halftime bet, not set up for halftime bets yet."
+0.131455002,-117,bos,nba,-115,bet365,under,0d 0m,jayson tatum,dallas mavericks @ boston celtics,ht_rebounds,8.5,"Halftime bet, not set up for halftime bets yet."
+0.143354607,-135,dal,nba,-130,bet365,under,0d 0m,kyrie irving,dallas mavericks @ boston celtics,ht_three_pointers_made,1.5,"Halftime bet, not set up for halftime bets yet."
+0.208066521,-125,bos,nba,-115,bet365,under,0d 0m,jayson tatum,dallas mavericks @ boston celtics,ht_turnovers,3.5,"Halftime bet, not set up for halftime bets yet."
+0.255836793,-115,dal,nba,-110,bet365,under,0d 0m,kyrie irving,dallas mavericks @ boston celtics,ht_points_rebounds_assists,25.5,"Halftime bet, not set up for halftime bets yet."
+0.270898598,-130,bos,nba,-115,bet365,under,0d 0m,jayson tatum,dallas mavericks @ boston celtics,ht_points_rebounds_assists,40.5,"Halftime bet, not set up for halftime bets yet."
+0.267517147,-125,dal,nba,-115,bet365,under,0d 0m,kyrie irving,dallas mavericks @ boston celtics,ht_points,17.5,"Halftime bet, not set up for halftime bets yet."
+0.134734266,125,dal,nba,125,bet365,under,0d 0m,daniel gafford,dallas mavericks @ boston celtics,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.377872472,176,dal,nba,180,bet365,under,0d 0m,daniel gafford,dallas mavericks @ boston celtics,ht_blocks,1.5,"Halftime bet, not set up for halftime bets yet."
+0.129583821,-162,dal,nba,-160,bet365,under,0d 0m,daniel gafford,dallas mavericks @ boston celtics,ht_steals_blocks,2.5,"Halftime bet, not set up for halftime bets yet."
+0.13073636,150,dal,nba,150,bet365,under,0d 0m,klay thompson,dallas mavericks @ boston celtics,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.146047952,-140,dal,nba,-140,bet365,under,0d 0m,kyrie irving,dallas mavericks @ boston celtics,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.199735754,-204,bos,nba,-200,bet365,under,0d 0m,kristaps porzingis,dallas mavericks @ boston celtics,ht_steals_blocks,3.5,"Halftime bet, not set up for halftime bets yet."
+0.116988707,-115,lac,nba,-115,bet365,under,1h 47m,james harden,indiana pacers @ los angeles clippers,three_pointers_made,2.5,successful bet
+0.107164336,105,lac,nba,105,bet365,under,1h 47m,ivica zubac,indiana pacers @ los angeles clippers,steals,0.5,successful bet
+0.211515642,135,lac,nba,145,bet365,under,1h 47m,ivica zubac,indiana pacers @ los angeles clippers,steals_blocks,1.5,successful bet
+0.159444127,105,orl,nba,105,bet365,under,5m,goga bitadze,orlando magic @ denver nuggets,points_rebounds,14.5,successful bet
+0.115662059,-125,orl,nba,-125,bet365,under,-6m,anthony black,orlando magic @ denver nuggets,points_assists,9.5,successful bet
+0.136500071,150,orl,nba,150,bet365,over,-8m,cole anthony,orlando magic @ denver nuggets,steals_blocks,1.5,successful bet
+0.302928114,135,den,nba,150,bet365,under,-8m,julian strawther,orlando magic @ denver nuggets,three_pointers_made,1.5,Failed to confirm bet placement
+0.119948926,155,min,nba,155,bet365,under,0d 0m,anthony edwards,houston rockets @ minnesota timberwolves,ht_three_pointers_made,3.5,"Halftime bet, not set up for halftime bets yet."
+0.102354767,-110,min,nba,-110,bet365,under,0d 0m,nickeil alexander-walker,houston rockets @ minnesota timberwolves,ht_points,4.5,"Halftime bet, not set up for halftime bets yet."
+0.106229167,-135,hou,nba,-135,bet365,under,0d 0m,amen thompson,houston rockets @ minnesota timberwolves,ht_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.141033054,-150,min,nba,-145,bet365,under,0d 0m,anthony edwards,houston rockets @ minnesota timberwolves,ht_turnovers,4.5,"Halftime bet, not set up for halftime bets yet."
+0.106017527,-115,min,nba,-115,bet365,under,0d 0m,anthony edwards,houston rockets @ minnesota timberwolves,ht_points,37.5,"Halftime bet, not set up for halftime bets yet."
+0.218731602,150,min,nba,160,bet365,under,0d 0m,nickeil alexander-walker,houston rockets @ minnesota timberwolves,ht_three_pointers_made,0.5,"Halftime bet, not set up for halftime bets yet."
+0.103822288,-115,sac,nba,-115,bet365,under,43m,domantas sabonis,sacramento kings @ portland trail blazers,points_rebounds_assists,37.5,successful bet
+0.11475388,160,por,nba,160,bet365,under,43m,anfernee simons,sacramento kings @ portland trail blazers,steals_blocks,0.5,successful bet
+0.220817849,140,sac,nba,150,bet365,under,43m,domantas sabonis,sacramento kings @ portland trail blazers,three_pointers_made,0.5,successful bet
+0.159776695,125,por,nba,130,bet365,under,43m,jerami grant,sacramento kings @ portland trail blazers,blocks,0.5,successful bet
+0.121070026,128,por,nba,128,bet365,under,43m,anfernee simons,sacramento kings @ portland trail blazers,steals,0.5,successful bet
+0.167190437,105,sac,nba,105,bet365,under,43m,demar derozan,sacramento kings @ portland trail blazers,rebounds,3.5,successful bet
+0.128455248,-120,sac,nba,-120,bet365,under,29m,malik monk,sacramento kings @ portland trail blazers,turnovers,2.5,successful bet
+0.157012725,140,lal,nba,145,bet365,under,9m,rui hachimura,golden state warriors @ los angeles lakers,steals,0.5,"Bet not made, could not find steals prop"
+0.113068553,-165,gsw,nba,-160,bet365,under,9m,moses moody,golden state warriors @ los angeles lakers,three_pointers_made,2.5,successful bet
+0.15750752,-135,lal,nba,-135,bet365,over,9m,shake milton,golden state warriors @ los angeles lakers,three_pointers_made,0.5,successful bet
+0.116376532,107,lal,nba,110,bet365,under,2m,lebron james,golden state warriors @ los angeles lakers,points_assists,36.5,successful bet
+0.201817857,124,gsw,nba,128,bet365,under,2m,stephen curry,golden state warriors @ los angeles lakers,turnovers,2.5,successful bet
+0.135228771,165,lal,nba,170,bet365,under,2m,austin reaves,golden state warriors @ los angeles lakers,steals,0.5,successful bet
+0.36858303,850,gsw,nba,850,bet365,side,2m,stephen curry,golden state warriors @ los angeles lakers,first_basket,0,"Bet not made, odds don't match for stephen curry
+0.263198135,260,lal,nba,280,bet365,over,2m,dorian finney-smith,golden state warriors @ los angeles lakers,blocks,0.5,successful bet
+0.129564436,-145,lal,nba,-140,bet365,under,2m,shake milton,golden state warriors @ los angeles lakers,steals,0.5,successful bet
+0.133662834,-110,lal,nba,-105,bet365,under,2m,lebron james,golden state warriors @ los angeles lakers,rebounds,8.5,successful bet
+0.201644412,170,den,nba,180,bet365,under,0d 0m,nikola jokic,orlando magic @ denver nuggets,ht_three_pointers_made,2.5,"Halftime bet, not set up for halftime bets yet."
+0.192495444,-165,ind,nba,-165,bet365,under,15m,thomas bryant,indiana pacers @ los angeles clippers,steals,0.5,successful bet
+0.101636342,155,ind,nba,155,bet365,under,15m,obi toppin,indiana pacers @ los angeles clippers,three_pointers_made,0.5,successful bet
+0.129619488,185,lac,nba,185,bet365,under,15m,nicolas batum,indiana pacers @ los angeles clippers,steals_blocks,0.5,successful bet
+0.158344688,125,ind,nba,135,bet365,under,15m,ben sheppard,indiana pacers @ los angeles clippers,steals_blocks,0.5,successful bet
+0.109874126,170,ind,nba,170,bet365,under,15m,t.j. mcconnell,indiana pacers @ los angeles clippers,steals_blocks,0.5,successful bet
+0.112108843,-285,ind,nba,-275,bet365,under,15m,bennedict mathurin,indiana pacers @ los angeles clippers,blocks,0.5,successful bet
+0.226732506,-110,ind,nba,-105,bet365,under,15m,bennedict mathurin,indiana pacers @ los angeles clippers,points,13.5,successful bet
+0.201644412,170,den,nba,180,bet365,under,0d 0m,nikola jokic,orlando magic @ denver nuggets,ht_three_pointers_made,2.5,"Halftime bet, not set up for halftime bets yet."
