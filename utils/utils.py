@@ -1,4 +1,5 @@
 import csv
+import functools
 import os
 import re
 import subprocess
@@ -59,7 +60,13 @@ def capture_window(window_name=None):
         raise WindowNotFoundException("Chrome window not found!")
 
     # Find the window handle using the updated window name
-    hwnd = find_window_by_partial_title(window_name)  # Replace with your window search logic
+    for trys in range(10):
+        hwnd = find_window_by_partial_title(window_name)  # Replace with your window search logic
+        if hwnd:
+            break
+        trys += 1
+        time.sleep(0.1)
+
     if not hwnd:
         print(f"Window with title '{window_name}' not found!")
         raise WindowNotFoundException(f"Window '{window_name}' not Found")
@@ -132,21 +139,36 @@ def click_control(control_image_path, window_name=None, threshold=0.8):
     Clicks on a UI control found using image matching.
 
     :param window_name: The title of the target window.
-    :param control_image_path: Path to the control's image.
+    :param control_image_path: Path(s) to the control's image (string or list of strings).
     :param threshold: Confidence threshold (default: 0.8).
     """
+    if not isinstance(control_image_path, list):
+        control_image_path = [control_image_path]  # Convert single string to list
+
     # Locate the control
-    control_location = find_control(control_image_path, window_name, threshold)
+    control_location = None
+    for path in control_image_path:
+        control_location = find_control(path, window_name, threshold)
+        if control_location:
+            break  # Stop at the first found control
+
     if not control_location:
         print("Control not found, cannot click.")
         return False
 
     # Get the window position (to adjust relative coordinates)
-    window_name = get_chrome_window_name()
-    hwnd = find_window_by_partial_title(window_name)
-    if not hwnd:
-        print("Window not found!")
-        return False
+    if not window_name:
+        window_name = get_chrome_window_name()
+
+    # Find the window handle using the updated window name
+    for _ in range(10):
+        hwnd = find_window_by_partial_title(window_name)  # Replace with your window search logic
+        if hwnd:
+            break
+        time.sleep(0.1)
+    else:
+        print(f"Window with title '{window_name}' not found!")
+        raise WindowNotFoundException(f"Window '{window_name}' not Found")
 
     left, top, right, bottom = win32gui.GetWindowRect(hwnd)
 
@@ -162,28 +184,69 @@ def click_control(control_image_path, window_name=None, threshold=0.8):
 
     return True
 
+def drag_control(control_image_path, window_name=None, threshold=0.8, drag_distance=200, drag_duration=0.4):
+    """
+    Clicks and drags a UI control horizontally using relative coordinates inside a window.
+
+    Args:
+        control_image_path (str): Path to the control's image.
+        window_name (str): The title of the target window.
+        threshold (float): Confidence threshold for image matching.
+        drag_distance (int): Distance to drag (positive for right, negative for left).
+        drag_duration (float): Duration of the drag motion.
+
+    Returns:
+        bool: True if the drag action was performed successfully, False otherwise.
+    """
+    # Locate the control
+    control_location = find_control(control_image_path, window_name, threshold)
+    if not control_location:
+        print("Control not found, cannot drag.")
+        return False
+
+    # Get the window position (to adjust relative coordinates)
+    window_name = get_chrome_window_name()
+    hwnd = find_window_by_partial_title(window_name)
+    if not hwnd:
+        print("Window not found!")
+        return False
+
+    left, top, _, _ = win32gui.GetWindowRect(hwnd)
+
+    # Convert relative coordinates to absolute screen coordinates
+    control_x, control_y = control_location
+    start_x = left + control_x
+    start_y = top + control_y
+    end_x = start_x + drag_distance  # Target x-coordinate for drag
+
+    # Perform the drag action
+    pyautogui.moveTo(start_x, start_y, duration=0.2)  # Move to start position
+    time.sleep(0.1)
+    pyautogui.mouseDown()
+    time.sleep(0.1)
+    pyautogui.moveTo(end_x, start_y, duration=drag_duration)  # Drag horizontally
+    time.sleep(0.1)
+    pyautogui.mouseUp()
+
+    return True
+
 
 def wait_for_control_to_be_visible(control_image_path, window_name=None, timeout=10, threshold=0.8):
     attempts = 0
-    if window_name == None:
-        get_chrome_window_name()
-    while attempts <= timeout:
-        if not find_control(control_image_path, window_name=window_name, threshold=threshold):
-            time.sleep(1)
-            attempts += 1
-        else:
-            return True
-    return False
+    if window_name is None:
+        window_name = get_chrome_window_name()  # Assuming this function returns the window name
 
-def wait_for_place_bet_button_to_be_visible(window_name=None, timeout=10, threshold=0.8):
-    attempts = 0
+    if not isinstance(control_image_path, list):
+        control_image_path = [control_image_path]  # Convert single path to list for consistency
+
     while attempts <= timeout:
-        if not find_control(f"{CONTROLS}\\bet365\\place_bet_button.png", window_name=window_name, threshold=threshold):
-            time.sleep(1)
-            attempts += 1
-        else:
-            return True
-    return False
+        for path in control_image_path:
+            if find_control(path, window_name=window_name, threshold=threshold):
+                return True  # Return immediately if any control is found
+        time.sleep(1)
+        attempts += 1
+
+    return False  # Return False if none of the controls are found within the timeout
 
 def wait_for_window_to_be_visible(window_name, timeout=10):
     """
@@ -208,16 +271,6 @@ def wait_for_window_to_be_visible(window_name, timeout=10):
 
 
 def keyboard_input(keys, interval=0.05):
-    """
-    Inputs a sequence of keypresses, supporting simultaneous key presses.
-
-    Args:
-        keys (list): A list containing:
-            - Strings (typed character by character)
-            - Special keys (e.g., "tab", "enter", "shift")
-            - Tuples of keys (e.g., ('shift', 'home')) for simultaneous key presses
-        interval (float): Delay between keypresses.
-    """
     if not isinstance(keys, list):
         raise TypeError("keys must be a list of strings or tuples.")
 
@@ -226,14 +279,20 @@ def keyboard_input(keys, interval=0.05):
             if len(item) > 1 and item.lower() not in pyautogui.KEYBOARD_KEYS:
                 pyautogui.write(item, interval=interval)  # Type full words
             else:
-                pyautogui.press(item)  # Press special keys like "tab", "enter"
+                # Handle special keys like 'win'
+                if item.lower() == 'win':
+                    keyboard.press('win')  # Press the Windows key
+                    time.sleep(interval)
+                    keyboard.release('win')  # Release the Windows key
+                else:
+                    pyautogui.press(item)  # Press regular special keys like "tab", "enter"
         elif isinstance(item, tuple):
             # Press multiple keys simultaneously
             for key in item:
-                pyautogui.keyDown(key)
+                keyboard.press(key)
             time.sleep(0.05)  # Short delay while keys are held down
             for key in reversed(item):
-                pyautogui.keyUp(key)  # Release keys in reverse order
+                keyboard.release(key)  # Release keys in reverse order
         else:
             raise TypeError(f"Unsupported key type in list: {item}")
 
@@ -285,42 +344,80 @@ def scroll_until_visible(control_image_path, window_name=None, threshold=0.8, sc
 
     return False
 
-def scroll_until_visible_and_click(control_image_paths, window_name=None, threshold=0.8, scroll_amount=-300, max_attempts=50, delay=0.3):
+def scroll_until_visible_and_click(control_image_path, window_name=None, threshold=0.8, scroll_amount=-300, max_attempts=20, delay=0.3):
     """
-    Scrolls until one of the specified controls (images) is visible on the screen and clicks it.
+    Scrolls until a specific control (image) is visible on the screen and clicks it.
 
     Args:
-        control_image_paths (list): List of control image paths.
-        window_name (str): Name of the window to search within.
-        threshold (float): Similarity threshold for image matching.
+        control_image_path (str): Path to the image of the control to find.
+        window_name (str): The title of the target window.
+        threshold (float): Confidence threshold for image matching.
         scroll_amount (int): The amount to scroll each attempt (-100 for up, 100 for down).
         max_attempts (int): Maximum number of scrolling attempts.
         delay (float): Time delay between each scroll attempt.
 
-    Raises:
-        ControlNotFoundException: If none of the controls are found after all scrolling attempts.
+    Returns:
+        bool: True if the control was found and clicked, False if it wasn't found within the limit.
     """
     attempts = 0
 
     while attempts < max_attempts:
-        for control_image_path in control_image_paths:
-            try:
-                # Try finding the control in the current list
-                location = find_control(window_name, control_image_path, threshold)
-                if location:
-                    click_control(window_name, control_image_path, threshold)
-                    return  # Clicked the found control, exit function
+        try:
+            location = find_control(control_image_path, window_name=window_name, threshold=threshold)
+            if location:
+                # Click the found control
+                time.sleep(0.3)
+                return click_control(control_image_path, window_name=window_name, threshold=threshold)
+        except pyautogui.ImageNotFoundException:
+            pass  # Continue scrolling if the control is not found
 
-            except pyautogui.ImageNotFoundException:
-                pass  # Continue searching if control is not found
-
-        # Scroll if no control is found
         pyautogui.scroll(scroll_amount)
         time.sleep(delay)
         attempts += 1
 
-    # If we exhaust all attempts and find nothing, raise an exception
-    raise ControlNotFoundException(f"None of the controls {control_image_paths} were found after scrolling through the page.")
+    return False
+
+def drag_until_visible_and_click(control_image_path, target_image_path, window_name=None, threshold=0.8, drag_distance=200, drag_duration=0.4, max_attempts=10, delay=0.3):
+    """
+    Clicks and drags horizontally until the target control is visible, then clicks it.
+
+    Args:
+        control_image_path (str): Image path of the control to initiate the drag.
+        target_image_path (str): Image path of the control to click once visible.
+        window_name (str): Name of the window to search within.
+        threshold (float): Similarity threshold for image matching.
+        drag_distance (int): Distance to drag each attempt (positive for right, negative for left).
+        drag_duration (float): Duration of the drag motion.
+        max_attempts (int): Maximum number of dragging attempts.
+        delay (float): Time delay between each drag attempt.
+
+    Returns:
+        bool: True if the target control was found and clicked, False otherwise.
+    """
+    attempts = 0
+
+    while attempts < max_attempts:
+        # Check if the target control is visible
+        try:
+            location = find_control(target_image_path, window_name=window_name, threshold=threshold)
+            if location:
+                click_control(target_image_path, window_name=window_name, threshold=threshold)
+                return True
+        except pyautogui.ImageNotFoundException:
+            pass  # Continue dragging if target is not found
+
+        # Try finding the control to initiate the drag
+        try:
+            start_location = find_control(control_image_path, window_name=window_name, threshold=threshold)
+            if start_location:
+                drag_control(control_image_path, window_name=window_name, threshold=threshold, drag_distance=drag_distance)
+                time.sleep(delay)
+        except pyautogui.ImageNotFoundException:
+            pass  # Continue searching if control is not found
+
+        attempts += 1
+
+    return False  # Return False if target control was never found
 
 def move_mouse_by(x_offset, y_offset):
     """
@@ -455,7 +552,7 @@ def get_window_position(window_name):
     rect = win32gui.GetWindowRect(hwnd)  # Get window position
     return rect[0], rect[1]  # (left, top)
 
-def take_screenshot_over(control_coordinates, window_name, distance_to_right=609, screenshot_width=87, screenshot_height=38):
+def take_screenshot_over(control_coordinates, window_name=None, distance_to_right=609, screenshot_width=87, screenshot_height=38):
     """
     Takes a screenshot centered around a point, relative to a control, and outputs the center coordinates.
 
@@ -471,6 +568,14 @@ def take_screenshot_over(control_coordinates, window_name, distance_to_right=609
             - PIL Image is the screenshot.
             - center_coordinates is a tuple (center_x, center_y).
     """
+    # If no window name is provided, dynamically get the active Chrome window name
+    if window_name is None:
+        window_name = get_chrome_window_name()
+
+    if window_name is None:
+        print("No Chrome window found!")
+        raise WindowNotFoundException("Chrome window not found!")
+
     # Get absolute window position
     window_x, window_y = get_window_position(window_name)
 
@@ -488,7 +593,7 @@ def take_screenshot_over(control_coordinates, window_name, distance_to_right=609
     # Return the screenshot and the center coordinates
     return screenshot, (center_x, center_y)
 
-def take_screenshot_under(control_coordinates, window_name, distance_to_right=872, screenshot_width=87, screenshot_height=38):
+def take_screenshot_under(control_coordinates, window_name=None, distance_to_right=872, screenshot_width=87, screenshot_height=38):
     """
     Takes a screenshot centered around a point, relative to a control.
 
@@ -502,6 +607,14 @@ def take_screenshot_under(control_coordinates, window_name, distance_to_right=87
     Returns:
         PIL Image: Screenshot as a PIL Image object.
     """
+    # If no window name is provided, dynamically get the active Chrome window name
+    if window_name is None:
+        window_name = get_chrome_window_name()
+
+    if window_name is None:
+        print("No Chrome window found!")
+        raise WindowNotFoundException("Chrome window not found!")
+
     # Get absolute window position
     window_x, window_y = get_window_position(window_name)
 
@@ -518,7 +631,7 @@ def take_screenshot_under(control_coordinates, window_name, distance_to_right=87
 
     return screenshot, (center_x, center_y)
 
-def take_screenshot_side(control_coordinates, window_name, distance_to_right=728, screenshot_width=87, screenshot_height=38):
+def take_screenshot_side(control_coordinates, window_name=None, distance_to_right=728, screenshot_width=87, screenshot_height=38):
     """
     Takes a screenshot centered around a point, relative to a control.
 
@@ -532,6 +645,14 @@ def take_screenshot_side(control_coordinates, window_name, distance_to_right=728
     Returns:
         PIL Image: Screenshot as a PIL Image object.
     """
+    # If no window name is provided, dynamically get the active Chrome window name
+    if window_name is None:
+        window_name = get_chrome_window_name()
+
+    if window_name is None:
+        print("No Chrome window found!")
+        raise WindowNotFoundException("Chrome window not found!")
+
     # Get absolute window position
     window_x, window_y = get_window_position(window_name)
 
@@ -681,20 +802,28 @@ def remove_matched_bets(bets_dict, csv_filepath):
     if not os.path.exists(csv_filepath):
         return bets_dict
 
-    # Load CSV file and store (Player, Game, Type) as a set for quick lookup
+    # Load CSV file and store (Player, Game, Type, Result) as a set for quick lookup
     filter_set = set()
+    csv_data = []  # To store CSV rows for later rewriting
+
     with open(csv_filepath, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
-        for row in reader:
-            filter_set.add((row["Player"].lower(), row["Game"].lower(), row["Type"].lower()))
+        csv_data = list(reader)  # Store all rows in memory
+        for row in csv_data:
+            filter_set.add((row["Player"].lower(), row["Game"].lower(), row["Type"].lower(), row["result"].lower()))
 
+    # filter_set.add(('max christie', 'houston rockets @ dallas mavericks ', 'blocks'))
     # Iterate through the dictionary and remove matching bets
     for book in list(bets_dict.keys()):
         for league in list(bets_dict[book].keys()):
             for game in list(bets_dict[book][league].keys()):
                 bets_dict[book][league][game] = [
                     bet for bet in bets_dict[book][league][game]
-                    if (bet["Player"].lower(), bet["Game"].lower(), bet["Type"].lower()) not in filter_set
+                    if (bet["Player"].lower(), bet["Game"].lower(), bet["Type"].lower(), 'successful bet') not in filter_set
+                       # or next((entry[3] for entry in filter_set if
+                       #          entry[0].lower() == bet["Player"].lower() and
+                       #          entry[1].lower() == bet["Game"].lower() and
+                       #          entry[2].lower() == bet["Type"].lower()), None) != 'successful bet'
                 ]
                 # Remove game if no bets remain
                 if not bets_dict[book][league][game]:
@@ -708,6 +837,23 @@ def remove_matched_bets(bets_dict, csv_filepath):
         if not bets_dict[book]:
             del bets_dict[book]
 
+    # Remove corresponding entries from CSV
+    # filtered_csv_data = [
+    #     row for row in csv_data
+    #     if (row["Player"].lower(), row["Game"].lower(), row["Type"].lower(), 'successful bet') in filter_set
+    #     # or next((entry[3] for entry in filter_set if
+    #     #          entry[0].lower() == row["Player"].lower() and
+    #     #          entry[1].lower() == row["Game"].lower() and
+    #     #          entry[2].lower() == row["Type"].lower()), None) != 'successful bet'
+    # ]
+    #
+    # # Write updated CSV data back to file
+    # if csv_data and filtered_csv_data:  # Ensure there are rows to write
+    #     with open(csv_filepath, mode="w", newline="", encoding="utf-8") as file:
+    #         writer = csv.DictWriter(file, fieldnames=csv_data[0].keys())  # Preserve column headers
+    #         writer.writeheader()
+    #         writer.writerows(filtered_csv_data)
+
     return bets_dict
 
 
@@ -720,3 +866,9 @@ def read_csv_to_dict(csv_filepath):
             bets_list.append(row)
 
     return bets_list
+
+def has_nba_bets(bets_dict):
+    for bookmaker, leagues in bets_dict.items():
+        if 'nba' in leagues:  # Check if 'nba' exists in the leagues under the bookmaker
+            return True
+    return False  # No NBA bets found
