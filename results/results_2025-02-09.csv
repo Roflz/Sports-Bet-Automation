@@ -1,0 +1,53 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.14167588782707644,135,cha,nba,135,bet365,over,3m,tidjane salaun,charlotte hornets @ detroit pistons,assists,1.5,successful bet
+0.12502993813601423,-150,det,nba,-150,bet365,under,3m,jalen duren,charlotte hornets @ detroit pistons,steals_blocks,2.5,successful bet
+0.1146370502034099,-140,det,nba,-140,bet365,under,3m,ausar thompson,charlotte hornets @ detroit pistons,steals,1.5,successful bet
+0.28736000000000006,600,det,nba,600,bet365,side,3m,cade cunningham,charlotte hornets @ detroit pistons,first_basket,0.0,successful bet
+0.2551257035647273,-105,det,nba,120,bet365,under,3m,cade cunningham,charlotte hornets @ detroit pistons,blocks,0.5,successful bet
+0.2252594330464766,-175,det,nba,-150,bet365,under,3m,isaiah stewart,charlotte hornets @ detroit pistons,blocks,1.5,successful bet
+0.12820492550927273,-105,det,nba,100,bet365,under,3m,tobias harris,charlotte hornets @ detroit pistons,steals_blocks,1.5,successful bet
+0.22527999999999995,800,cha,nba,800,bet365,side,3m,miles bridges,charlotte hornets @ detroit pistons,first_basket,0.0,successful bet
+0.11267132867132791,130,cha,nba,130,bet365,under,3m,tidjane salaun,charlotte hornets @ detroit pistons,steals,0.5,successful bet
+0.13960889110889185,127,det,nba,128,bet365,under,3m,cade cunningham,charlotte hornets @ detroit pistons,steals_blocks,1.5,successful bet
+0.358373897130906,105,det,nba,115,bet365,under,3m,isaiah stewart,charlotte hornets @ detroit pistons,steals_blocks,1.5,successful bet
+0.21953655847392262,145,det,nba,145,bet365,under,3m,jalen duren,charlotte hornets @ detroit pistons,steals,0.5,successful bet
+0.14679720279720226,105,det,nba,110,bet365,under,-4m,tobias harris,charlotte hornets @ detroit pistons,blocks,0.5,Failed to confirm bet placement
+0.1739420663968108,-110,phi,nba,-110,bet365,under,15m,kelly oubre jr.,philadelphia 76ers @ milwaukee bucks,points_assists,14.5,Failed to confirm bet placement
+0.10378486981541735,100,mil,nba,100,bet365,under,15m,andre jackson jr.,philadelphia 76ers @ milwaukee bucks,points_assists,4.5,successful bet
+0.2485205978855261,112,mil,nba,125,bet365,under,15m,brook lopez,philadelphia 76ers @ milwaukee bucks,blocks,1.5,"bet odds, availability or price changed"
+0.13153095516123228,-115,mil,nba,-110,bet365,under,15m,aj green,philadelphia 76ers @ milwaukee bucks,steals_blocks,0.5,successful bet
+0.2113692307692308,650,mil,nba,650,bet365,side,15m,damian lillard,philadelphia 76ers @ milwaukee bucks,first_basket,0.0,Failed to confirm bet placement
+0.1748157605151539,-110,phi,nba,-110,bet365,under,7m,kelly oubre jr.,philadelphia 76ers @ milwaukee bucks,points_assists,14.5,successful bet
+0.1316005579846046,-105,mil,nba,-105,bet365,under,7m,kyle kuzma,philadelphia 76ers @ milwaukee bucks,steals,0.5,successful bet
+0.12550084572467182,110,mil,nba,110,bet365,under,7m,taurean prince,philadelphia 76ers @ milwaukee bucks,steals,0.5,successful bet
+0.16427263485413196,127,phi,nba,128,bet365,under,7m,tyrese maxey,philadelphia 76ers @ milwaukee bucks,steals_blocks,1.5,successful bet
+0.1506563000169274,-185,phi,nba,-180,bet365,under,7m,joel embiid,philadelphia 76ers @ milwaukee bucks,turnovers,3.5,Failed to confirm bet placement
+0.18337062937062998,130,phi,nba,140,bet365,under,7m,paul george,philadelphia 76ers @ milwaukee bucks,turnovers,1.5,successful bet
+0.10106908524745305,-150,mil,nba,-150,bet365,under,7m,aj green,philadelphia 76ers @ milwaukee bucks,steals,0.5,successful bet
+0.14155244755244822,140,phi,nba,140,bet365,under,7m,kelly oubre jr.,philadelphia 76ers @ milwaukee bucks,steals_blocks,1.5,successful bet
+0.17095211267605617,900,phi,nba,900,bet365,side,7m,tyrese maxey,philadelphia 76ers @ milwaukee bucks,first_basket,0.0,successful bet
+0.14758631811841522,-115,mil,nba,-115,bet365,under,7m,andre jackson jr.,philadelphia 76ers @ milwaukee bucks,points,3.5,successful bet
+0.11588813655480279,-135,phi,nba,-135,bet365,under,7m,guerschon yabusele,philadelphia 76ers @ milwaukee bucks,rebounds,5.5,successful bet
+0.2153792089594134,-160,hou,nba,-160,bet365,under,7m,aaron holiday,toronto raptors @ houston rockets,assists,2.5,successful bet
+0.1910257960469552,-110,hou,nba,-110,bet365,under,7m,amen thompson,toronto raptors @ houston rockets,points_assists,23.5,Failed to confirm bet placement
+0.17840053655671861,-120,tor,nba,-115,bet365,under,7m,immanuel quickley,toronto raptors @ houston rockets,assists_rebounds,9.5,successful bet
+0.2057841052879897,-116,hou,nba,-115,bet365,under,7m,aaron holiday,toronto raptors @ houston rockets,points_rebounds,8.5,successful bet
+0.15927771749364264,-122,tor,nba,-115,bet365,under,7m,jamal shead,toronto raptors @ houston rockets,points_assists,12.5,successful bet
+0.26798331972757083,-118,hou,nba,-110,bet365,under,7m,aaron holiday,toronto raptors @ houston rockets,points_rebounds_assists,10.5,successful bet
+0.15951522312676586,-151,hou,nba,-150,bet365,under,7m,aaron holiday,toronto raptors @ houston rockets,assists_rebounds,4.5,Failed to confirm bet placement
+0.11718113091597923,-120,tor,nba,-120,bet365,under,7m,immanuel quickley,toronto raptors @ houston rockets,points_rebounds,19.5,successful bet
+0.12325532725010518,-130,tor,nba,-125,bet365,under,7m,immanuel quickley,toronto raptors @ houston rockets,points_rebounds_assists,25.5,successful bet
+0.10326484217071027,-115,tor,nba,-115,bet365,under,7m,jamal shead,toronto raptors @ houston rockets,points_rebounds_assists,14.5,successful bet
+0.21575559247382387,115,tor,nba,130,bet365,under,7m,ochai agbaji,toronto raptors @ houston rockets,blocks,0.5,successful bet
+0.1620599774057712,-110,hou,nba,-105,bet365,under,7m,amen thompson,toronto raptors @ houston rockets,blocks,1.5,successful bet
+0.24364444444444444,1000,tor,nba,1000,bet365,side,7m,immanuel quickley,toronto raptors @ houston rockets,first_basket,0.0,successful bet
+0.14692,800,hou,nba,800,bet365,side,7m,jalen green,toronto raptors @ houston rockets,first_basket,0.0,successful bet
+0.11657849271471493,-105,tor,nba,-105,bet365,under,7m,ja'kobe walter,toronto raptors @ houston rockets,rebounds,2.5,successful bet
+0.27546084360371476,-135,tor,nba,-115,bet365,under,7m,immanuel quickley,toronto raptors @ houston rockets,rebounds,3.5,successful bet
+0.1960399600399595,115,hou,nba,115,bet365,under,7m,aaron holiday,toronto raptors @ houston rockets,rebounds,1.5,successful bet
+0.23828980110798226,112,mil,nba,115,bet365,under,-10m,brook lopez,philadelphia 76ers @ milwaukee bucks,blocks,1.5,successful bet
+0.15215737445464794,-185,phi,nba,-180,bet365,under,-10m,joel embiid,philadelphia 76ers @ milwaukee bucks,turnovers,3.5,successful bet
+0.20536923076923078,650,mil,nba,650,bet365,side,-10m,damian lillard,philadelphia 76ers @ milwaukee bucks,first_basket,0.0,successful bet
+0.16162758112313003,-150,hou,nba,-150,bet365,under,-10m,aaron holiday,toronto raptors @ houston rockets,assists_rebounds,4.5,Failed to confirm bet placement
+0.19281884878544087,-110,hou,nba,-110,bet365,under,-10m,amen thompson,toronto raptors @ houston rockets,points_assists,23.5,successful bet
+0.10925250860115818,-130,tor,nba,-130,bet365,under,-10m,jamal shead,toronto raptors @ houston rockets,points,8.5,successful bet

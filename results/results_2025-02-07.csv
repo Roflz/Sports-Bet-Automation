@@ -1,0 +1,130 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.2646617730095986,105,cha,nba,105,bet365,under,14m,nick smith jr.,san antonio spurs @ charlotte hornets,rebounds,3.5,successful bet
+0.14107310870947168,-110,sas,nba,-110,bet365,under,14m,keldon johnson,san antonio spurs @ charlotte hornets,rebounds,3.5,successful bet
+0.1256383632641422,-125,sas,nba,-120,bet365,under,14m,stephon castle,san antonio spurs @ charlotte hornets,points,11.5,successful bet
+0.11504195804195898,180,sas,nba,180,bet365,under,14m,stephon castle,san antonio spurs @ charlotte hornets,three_pointers_made,0.5,successful bet
+0.13915305054227156,-105,sas,nba,100,bet365,under,14m,keldon johnson,san antonio spurs @ charlotte hornets,steals_blocks,0.5,successful bet
+0.12763015103058947,132,cha,nba,132,bet365,under,14m,tidjane salaun,san antonio spurs @ charlotte hornets,turnovers,0.5,successful bet
+0.14141258741258683,100,cha,nba,100,bet365,under,14m,nick smith jr.,san antonio spurs @ charlotte hornets,turnovers,1.5,successful bet
+0.10340835758556288,-115,sas,nba,-115,bet365,under,14m,julian champagnie,san antonio spurs @ charlotte hornets,steals,0.5,successful bet
+0.12127272727272792,160,cha,nba,160,bet365,under,14m,nick smith jr.,san antonio spurs @ charlotte hornets,steals_blocks,0.5,successful bet
+0.10796592854851088,-110,sas,nba,-110,bet365,under,14m,victor wembanyama,san antonio spurs @ charlotte hornets,points_assists,28.5,successful bet
+0.148881286603684,-105,cha,nba,-105,bet365,under,14m,nick smith jr.,san antonio spurs @ charlotte hornets,points_rebounds,17.5,successful bet
+0.1610953819637131,-120,cha,nba,-120,bet365,under,14m,miles bridges,san antonio spurs @ charlotte hornets,points_rebounds,30.5,"Bet not made, odds don't match for miles bridges
+Expected Line: 30.5, Expected Price: -120
+Actual Line: 295, Actual Price: -115"
+0.13152896378983286,-115,cle,nba,-115,bet365,under,0m,jarrett allen,cleveland cavaliers @ washington wizards,rebounds,11.5,successful bet
+0.19285314685314636,-140,cle,nba,-125,bet365,under,0m,evan mobley,cleveland cavaliers @ washington wizards,rebounds,10.5,successful bet
+0.18249326133988802,110,cle,nba,125,bet365,under,0m,max strus,cleveland cavaliers @ washington wizards,rebounds,4.5,successful bet
+0.14560839160839242,130,was,nba,130,bet365,under,0m,corey kispert,cleveland cavaliers @ washington wizards,steals,0.5,Failed to confirm bet placement
+0.11159984772032917,-135,was,nba,-135,bet365,under,0m,richaun holmes,cleveland cavaliers @ washington wizards,steals,0.5,successful bet
+0.13743787394556473,-125,cle,nba,-120,bet365,under,0m,darius garland,cleveland cavaliers @ washington wizards,points_rebounds,25.5,Failed to confirm bet placement
+0.15559781809290696,-116,cle,nba,-115,bet365,under,0m,evan mobley,cleveland cavaliers @ washington wizards,points_rebounds,28.5,successful bet
+0.1630075030124603,-110,cle,nba,-110,bet365,under,0m,darius garland,cleveland cavaliers @ washington wizards,points_assists,28.5,successful bet
+0.1442016556018476,-125,cle,nba,-115,bet365,under,0m,darius garland,cleveland cavaliers @ washington wizards,points_rebounds_assists,31.5,successful bet
+0.19860921412130375,-122,cle,nba,-115,bet365,under,0m,evan mobley,cleveland cavaliers @ washington wizards,points_rebounds_assists,31.5,"Bet not made, odds don't match for evan mobley
+Expected Line: 31.5, Expected Price: -122
+Actual Line: 305, Actual Price: -115"
+0.10114152514152588,115,sas,nba,115,bet365,under,0m,julian champagnie,san antonio spurs @ charlotte hornets,rebounds,2.5,successful bet
+0.11064811769013617,-120,sas,nba,-120,bet365,under,0m,victor wembanyama,san antonio spurs @ charlotte hornets,points,25.5,successful bet
+0.12975012616249806,145,sas,nba,145,bet365,under,0m,stephon castle,san antonio spurs @ charlotte hornets,steals_blocks,0.5,successful bet
+0.11919008339441721,-105,sas,nba,-105,bet365,under,0m,stephon castle,san antonio spurs @ charlotte hornets,steals,0.5,successful bet
+0.10109823247745778,-140,sas,nba,-140,bet365,under,0m,chris paul,san antonio spurs @ charlotte hornets,three_pointers_made,1.5,Failed to confirm bet placement
+0.15334065934065905,-175,bkn,nba,-175,bet365,under,14m,d'angelo russell,miami heat @ brooklyn nets,blocks,0.5,successful bet
+0.17358330660165605,135,bkn,nba,135,bet365,under,14m,d'angelo russell,miami heat @ brooklyn nets,steals,0.5,successful bet
+0.19807248176593206,144,bkn,nba,145,bet365,under,14m,keon johnson,miami heat @ brooklyn nets,three_pointers_made,1.5,successful bet
+0.11539860139860122,-250,bkn,nba,-250,bet365,under,14m,ziaire williams,miami heat @ brooklyn nets,blocks,0.5,Failed to confirm bet placement
+0.17810608259664942,190,bkn,nba,190,bet365,under,9m,ziaire williams,miami heat @ brooklyn nets,steals,0.5,successful bet
+0.17536157959687296,145,bkn,nba,145,bet365,under,9m,nic claxton,miami heat @ brooklyn nets,steals,0.5,successful bet
+0.1674361745082074,-135,mia,nba,-130,bet365,under,9m,haywood highsmith,miami heat @ brooklyn nets,blocks,0.5,successful bet
+0.12308900575231188,-160,bkn,nba,-155,bet365,under,9m,d'angelo russell,miami heat @ brooklyn nets,steals_blocks,1.5,Failed to confirm bet placement
+0.16690487973391677,-130,bkn,nba,-120,bet365,under,5m,cameron johnson,miami heat @ brooklyn nets,points,18.5,successful bet
+0.14370240514909804,-120,bkn,nba,-120,bet365,under,5m,keon johnson,miami heat @ brooklyn nets,points,13.5,"Bet not made, odds don't match for keon johnson
+Expected Line: 13.5, Expected Price: -120
+Actual Line: 185, Actual Price: -120"
+0.21577335741647044,130,bkn,nba,140,bet365,under,5m,cameron johnson,miami heat @ brooklyn nets,three_pointers_made,2.5,successful bet
+0.14611085211085173,-140,bkn,nba,-135,bet365,under,5m,ziaire williams,miami heat @ brooklyn nets,steals_blocks,1.5,successful bet
+0.13001472471190753,-160,bkn,nba,-160,bet365,under,5m,keon johnson,miami heat @ brooklyn nets,steals,1.5,successful bet
+0.15985429410014076,-105,atl,nba,-105,bet365,under,5m,dyson daniels,milwaukee bucks @ atlanta hawks,assists,4.5,"Bet not made, could not find player dyson daniels"
+0.1604335664335659,110,bkn,nba,110,bet365,under,0m,keon johnson,miami heat @ brooklyn nets,steals_blocks,1.5,successful bet
+0.20969411764705892,900,mia,nba,900,bet365,side,0m,tyler herro,miami heat @ brooklyn nets,first_basket,0.0,successful bet
+0.15592307692307758,155,mia,nba,165,bet365,under,0m,tyler herro,miami heat @ brooklyn nets,steals,0.5,successful bet
+0.1434311111111112,850,bkn,nba,850,bet365,side,0m,cameron johnson,miami heat @ brooklyn nets,first_basket,0.0,Failed to confirm bet placement
+0.11565408323173323,-110,bkn,nba,-110,bet365,under,-3m,d'angelo russell,miami heat @ brooklyn nets,points,13.5,successful bet
+0.13039960039959958,120,bkn,nba,125,bet365,over,-3m,jalen wilson,miami heat @ brooklyn nets,rebounds,3.5,successful bet
+0.17014098894765647,100,mil,nba,100,bet365,under,-3m,andre jackson jr.,milwaukee bucks @ atlanta hawks,points_rebounds,8.5,Failed to confirm bet placement
+0.17692946406184262,-120,mil,nba,-120,bet365,under,-3m,taurean prince,milwaukee bucks @ atlanta hawks,points_rebounds_assists,16.5,successful bet
+0.17954076258245122,-125,mil,nba,-125,bet365,under,-3m,taurean prince,milwaukee bucks @ atlanta hawks,points_assists,12.5,successful bet
+0.13898834498834456,-150,atl,nba,-150,bet365,under,-3m,onyeka okongwu,milwaukee bucks @ atlanta hawks,turnovers,1.5,successful bet
+0.12384341745211382,135,atl,nba,135,bet365,under,-3m,dyson daniels,milwaukee bucks @ atlanta hawks,turnovers,1.5,Failed to confirm bet placement
+0.14173209506818324,-110,mil,nba,-110,bet365,under,-9m,andre jackson jr.,milwaukee bucks @ atlanta hawks,points_rebounds_assists,10.5,successful bet
+0.11716954700206146,-105,mil,nba,-105,bet365,under,-9m,andre jackson jr.,milwaukee bucks @ atlanta hawks,points_assists,6.5,successful bet
+0.12951348735512627,-115,atl,nba,-110,bet365,under,-9m,trae young,milwaukee bucks @ atlanta hawks,three_pointers_made,3.5,Failed to confirm bet placement
+0.1449633957448053,-115,phi,nba,-115,bet365,under,-12m,tyrese maxey,philadelphia 76ers @ detroit pistons,assists,6.5,successful bet
+0.2452831509575692,-105,tor,nba,-105,bet365,under,13m,scottie barnes,toronto raptors @ oklahoma city thunder,assists,5.5,successful bet
+0.11654835549833083,-116,tor,nba,-115,bet365,under,13m,ochai agbaji,toronto raptors @ oklahoma city thunder,points_rebounds_assists,14.5,Failed to confirm bet placement
+0.16530181818181827,800,okc,nba,800,bet365,side,13m,jalen williams,toronto raptors @ oklahoma city thunder,first_basket,0.0,successful bet
+0.11703414634146347,450,okc,nba,450,bet365,side,13m,shai gilgeous-alexander,toronto raptors @ oklahoma city thunder,first_basket,0.0,successful bet
+0.2586875958335867,140,tor,nba,150,bet365,over,13m,jonathan mogbo,toronto raptors @ oklahoma city thunder,turnovers,1.5,successful bet
+0.10191976108997468,140,okc,nba,140,bet365,under,13m,kenrich williams,toronto raptors @ oklahoma city thunder,three_pointers_made,0.5,Failed to confirm bet placement
+0.19315384615384715,174,okc,nba,175,bet365,under,7m,chet holmgren,toronto raptors @ oklahoma city thunder,three_pointers_made,0.5,successful bet
+0.14454945054945034,-175,okc,nba,-175,bet365,under,7m,alex caruso,toronto raptors @ oklahoma city thunder,steals_blocks,2.5,successful bet
+0.3347950953156425,124,okc,nba,140,bet365,under,7m,jalen williams,toronto raptors @ oklahoma city thunder,steals,1.5,successful bet
+0.18185388997923002,-130,tor,nba,-125,bet365,under,7m,ochai agbaji,toronto raptors @ oklahoma city thunder,blocks,0.5,Failed to confirm bet placement
+0.11426169532680024,-120,tor,nba,-120,bet365,under,3m,scottie barnes,toronto raptors @ oklahoma city thunder,points_rebounds_assists,32.5,successful bet
+0.24278654355391616,-105,okc,nba,-105,bet365,under,3m,alex caruso,toronto raptors @ oklahoma city thunder,steals,1.5,successful bet
+0.2555384615384612,-120,okc,nba,-120,bet365,under,3m,jalen williams,toronto raptors @ oklahoma city thunder,steals_blocks,2.5,successful bet
+0.1265152057245075,120,tor,nba,120,bet365,over,1m,jonathan mogbo,toronto raptors @ oklahoma city thunder,steals_blocks,1.5,successful bet
+0.12348717948717902,-120,okc,nba,-120,bet365,under,-2m,jaylin williams,toronto raptors @ oklahoma city thunder,blocks,0.5,successful bet
+0.1051888111888106,100,tor,nba,100,bet365,under,-2m,jamal shead,toronto raptors @ oklahoma city thunder,steals,0.5,successful bet
+0.13349018739035048,-130,okc,nba,-130,fanduel,under,-2m,jalen williams,toronto raptors @ oklahoma city thunder,three_pointers_made,1.5,successful bet
+0.19647046730404144,-140,okc,nba,-140,fanduel,under,-2m,chet holmgren,toronto raptors @ oklahoma city thunder,blocks,1.5,Could not find prop combos
+0.14258719058718997,130,cha,nba,130,bet365,under,0d 0m,miles bridges,san antonio spurs @ charlotte hornets,ht_assists,1.5,"Halftime bet, not set up for halftime bets yet."
+0.11692580060843831,-115,sas,nba,-115,bet365,under,0d 0m,de'aaron fox,san antonio spurs @ charlotte hornets,ht_points_rebounds,24.5,"Halftime bet, not set up for halftime bets yet."
+0.17896874045772254,-120,sas,nba,-115,bet365,under,0d 0m,victor wembanyama,san antonio spurs @ charlotte hornets,ht_points_rebounds,37.5,"Halftime bet, not set up for halftime bets yet."
+0.19622168129637502,-120,sas,nba,-115,bet365,under,0d 0m,victor wembanyama,san antonio spurs @ charlotte hornets,ht_points_rebounds_assists,40.5,"Halftime bet, not set up for halftime bets yet."
+0.19164094912143098,-105,sas,nba,-105,bet365,under,0d 0m,de'aaron fox,san antonio spurs @ charlotte hornets,ht_points_assists,24.5,"Halftime bet, not set up for halftime bets yet."
+0.19639824888323829,-125,sas,nba,-115,bet365,under,0d 0m,de'aaron fox,san antonio spurs @ charlotte hornets,ht_points_rebounds_assists,30.5,"Halftime bet, not set up for halftime bets yet."
+0.17217368408036843,-105,sas,nba,-105,bet365,under,0d 0m,victor wembanyama,san antonio spurs @ charlotte hornets,ht_points_assists,27.5,"Halftime bet, not set up for halftime bets yet."
+0.12138382573536055,-115,sas,nba,-115,bet365,under,0d 0m,victor wembanyama,san antonio spurs @ charlotte hornets,ht_blocks,3.5,"Halftime bet, not set up for halftime bets yet."
+0.21216621514433148,-104,sas,nba,-104,fanduel,under,0d 0m,de'aaron fox,san antonio spurs @ charlotte hornets,ht_points,19.5,"Halftime bet, not set up for halftime bets yet."
+0.24541264593147363,130,okc,nba,135,bet365,under,-10m,chet holmgren,toronto raptors @ oklahoma city thunder,steals_blocks,1.5,successful bet
+0.21222231001215608,-114,sas,nba,-114,fanduel,under,0d 0m,victor wembanyama,san antonio spurs @ charlotte hornets,ht_points,25.5,"Halftime bet, not set up for halftime bets yet."
+0.23016383616383548,120,cle,nba,130,bet365,under,0d 0m,ty jerome,cleveland cavaliers @ washington wizards,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.12474043161140026,178,sas,nba,180,bet365,under,0d 0m,de'aaron fox,san antonio spurs @ charlotte hornets,ht_three_pointers_made,1.5,"Halftime bet, not set up for halftime bets yet."
+0.14969016697588214,160,bkn,nba,160,bet365,under,0d 0m,keon johnson,miami heat @ brooklyn nets,ht_three_pointers_made,0.5,"Halftime bet, not set up for halftime bets yet."
+0.13465065369413154,-115,bkn,nba,-115,bet365,under,0d 0m,keon johnson,miami heat @ brooklyn nets,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.17101289701289704,-225,mil,nba,-210,bet365,under,0d 0m,aj green,milwaukee bucks @ atlanta hawks,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.18284084185169475,-110,atl,nba,-110,bet365,under,0d 0m,trae young,milwaukee bucks @ atlanta hawks,ht_points_rebounds,25.5,"Halftime bet, not set up for halftime bets yet."
+0.16790613973182864,165,bkn,nba,175,bet365,under,0d 0m,cameron johnson,miami heat @ brooklyn nets,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.1707064846416379,-170,atl,nba,-160,bet365,under,0d 0m,trae young,milwaukee bucks @ atlanta hawks,ht_turnovers,3.5,"Halftime bet, not set up for halftime bets yet."
+0.13946137186904842,-125,atl,nba,-120,bet365,under,0d 0m,trae young,milwaukee bucks @ atlanta hawks,ht_points_rebounds_assists,33.5,"Halftime bet, not set up for halftime bets yet."
+0.14195494408677092,-115,atl,nba,-110,bet365,under,0d 0m,trae young,milwaukee bucks @ atlanta hawks,ht_points_assists,31.5,"Halftime bet, not set up for halftime bets yet."
+0.21469324953042798,-125,atl,nba,-115,bet365,under,0d 0m,trae young,milwaukee bucks @ atlanta hawks,ht_points,24.5,"Halftime bet, not set up for halftime bets yet."
+0.14712472814162342,-115,phx,nba,-115,bet365,under,20m,royce o'neale,utah jazz @ phoenix suns,steals,1.5,"Bet not made, could not find steals prop"
+0.21988066139467957,100,phx,nba,100,bet365,under,20m,nick richards,utah jazz @ phoenix suns,steals,0.5,Failed to find wager text
+0.16932917532917507,-130,uta,nba,-120,bet365,under,16m,john collins,utah jazz @ phoenix suns,turnovers,2.5,successful bet
+0.17821021322722744,165,uta,nba,170,bet365,under,16m,john collins,utah jazz @ phoenix suns,blocks,0.5,successful bet
+0.1036426627532148,-155,uta,nba,-155,bet365,under,16m,walker kessler,utah jazz @ phoenix suns,blocks,2.5,successful bet
+0.1407898826427961,-119,uta,nba,-115,bet365,under,16m,john collins,utah jazz @ phoenix suns,three_pointers_made,1.5,successful bet
+0.17242926304464742,-130,phx,nba,-130,bet365,under,16m,nick richards,utah jazz @ phoenix suns,turnovers,1.5,successful bet
+0.11341048614957329,-185,uta,nba,-180,bet365,under,16m,john collins,utah jazz @ phoenix suns,steals_blocks,2.5,successful bet
+0.11325384260409715,150,phx,nba,150,bet365,under,16m,mason plumlee,utah jazz @ phoenix suns,blocks,0.5,successful bet
+0.1588691525423728,700,uta,nba,700,bet365,side,16m,lauri markkanen,utah jazz @ phoenix suns,first_basket,0.0,successful bet
+0.11770761986905683,-119,uta,nba,-115,bet365,under,1m,keyonte george,utah jazz @ phoenix suns,points_rebounds_assists,26.5,successful bet
+0.1572931206789025,-125,uta,nba,-120,bet365,under,1m,keyonte george,utah jazz @ phoenix suns,points_assists,23.5,successful bet
+0.13160086067778337,-130,phx,nba,-130,bet365,under,1m,devin booker,utah jazz @ phoenix suns,turnovers,3.5,successful bet
+0.2676107794644374,100,uta,nba,110,bet365,under,1m,keyonte george,utah jazz @ phoenix suns,turnovers,2.5,successful bet
+0.18192063492063448,-125,uta,nba,-120,bet365,under,1m,keyonte george,utah jazz @ phoenix suns,three_pointers_made,2.5,successful bet
+0.20354577532559265,190,uta,nba,190,bet365,under,1m,john collins,utah jazz @ phoenix suns,steals,0.5,successful bet
+0.2336333044668787,-145,uta,nba,-140,bet365,under,1m,isaiah collier,utah jazz @ phoenix suns,turnovers,4.5,successful bet
+0.20208062525709666,240,phx,nba,260,bet365,over,-2m,devin booker,utah jazz @ phoenix suns,blocks,0.5,successful bet
+0.13644341372912888,160,uta,nba,160,bet365,under,-2m,isaiah collier,utah jazz @ phoenix suns,three_pointers_made,0.5,successful bet
+0.15061838161838084,115,phx,nba,115,bet365,under,-2m,tyus jones,utah jazz @ phoenix suns,turnovers,1.5,"Bet not made, odds don't match for tyus jones
+Expected Line: 1.5, Expected Price: 115
+Actual Line: 45, Actual Price: 115"
+0.14037912087912,120,phx,nba,125,bet365,over,-2m,grayson allen,utah jazz @ phoenix suns,three_pointers_made,3.5,successful bet
+0.11006941306669966,-115,phx,nba,-115,bet365,under,-2m,devin booker,utah jazz @ phoenix suns,points,32.5,Failed to confirm bet placement
+0.13793321719873555,134,phx,nba,134,fanduel,under,-2m,devin booker,utah jazz @ phoenix suns,points_assists,37.5,"Odds don't match for devin booker
+Expected Line: 37.5, Expected Price: 134
+Actual Line: 395, Actual Price: -113"

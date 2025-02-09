@@ -1,0 +1,78 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.10039616374578528,-115,sas,nba,-115,bet365,under,-8m,victor wembanyama,san antonio spurs @ orlando magic,points_rebounds_assists,36.5,successful bet
+0.11901248846650865,-115,chi,nba,-115,bet365,under,-5m,matas buzelis,golden state warriors @ chicago bulls,points_assists,14.5,successful bet
+0.2245149396058483,-110,chi,nba,-110,bet365,under,-5m,josh giddey,golden state warriors @ chicago bulls,steals_blocks,1.5,successful bet
+0.11438560086326155,-116,chi,nba,-115,bet365,under,-8m,coby white,golden state warriors @ chicago bulls,points,20.5,successful bet
+0.16791506467226303,-150,chi,nba,-145,bet365,under,-8m,matas buzelis,golden state warriors @ chicago bulls,blocks,1.5,successful bet
+0.13970284415893505,-235,chi,nba,-235,bet365,under,-8m,josh giddey,golden state warriors @ chicago bulls,steals,1.5,successful bet
+0.39972307692307696,800,gsw,nba,800,bet365,side,-8m,stephen curry,golden state warriors @ chicago bulls,first_basket,0.0,successful bet
+0.13827677585572296,-190,chi,nba,-190,bet365,under,-8m,ayo dosunmu,golden state warriors @ chicago bulls,blocks,0.5,successful bet
+0.13036363636363602,-130,chi,nba,-130,bet365,under,-8m,jalen smith,golden state warriors @ chicago bulls,blocks,0.5,successful bet
+0.1551431052607517,120,chi,nba,130,bet365,under,-8m,matas buzelis,golden state warriors @ chicago bulls,steals_blocks,1.5,successful bet
+0.1428184123568736,-130,nyk,nba,-130,bet365,under,1m,miles mcbride,boston celtics @ new york knicks,assists,2.5,successful bet
+0.11281224487831555,-120,bos,nba,-120,bet365,under,1m,jayson tatum,boston celtics @ new york knicks,points_rebounds_assists,42.5,successful bet
+0.1348984513804733,-155,nyk,nba,-155,bet365,under,1m,precious achiuwa,boston celtics @ new york knicks,steals_blocks,2.5,successful bet
+0.15151748251748176,125,bos,nba,125,bet365,under,1m,luke kornet,boston celtics @ new york knicks,steals_blocks,1.5,successful bet
+0.15801793045247556,-135,bos,nba,-130,bet365,under,1m,jayson tatum,boston celtics @ new york knicks,turnovers,3.5,successful bet
+0.12140087959121584,-120,bos,nba,-120,bet365,under,-3m,luke kornet,boston celtics @ new york knicks,points_assists,10.5,successful bet
+0.13413653690231658,-125,bos,nba,-125,bet365,under,-3m,luke kornet,boston celtics @ new york knicks,points_rebounds,14.5,successful bet
+0.12686713286713217,125,bos,nba,125,bet365,under,-3m,al horford,boston celtics @ new york knicks,turnovers,0.5,successful bet
+0.1318322289064655,132,phx,nba,132,bet365,under,16m,mason plumlee,denver nuggets @ phoenix suns,blocks,0.5,successful bet
+0.1058514285714285,700,phx,nba,700,bet365,side,16m,devin booker,denver nuggets @ phoenix suns,first_basket,0.0,successful bet
+0.15046368868890958,-130,phx,nba,-125,bet365,under,16m,mason plumlee,denver nuggets @ phoenix suns,points,6.5,successful bet
+0.14207159295339633,-130,bos,nba,-120,bet365,under,0d 0m,payton pritchard,boston celtics @ new york knicks,ht_points_assists,23.5,"Halftime bet, not set up for halftime bets yet."
+0.1485808378270922,-105,nyk,nba,-105,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_rebounds,33.5,"Halftime bet, not set up for halftime bets yet."
+0.12054491587912103,-105,bos,nba,-105,bet365,under,0d 0m,payton pritchard,boston celtics @ new york knicks,ht_points,20.5,"Halftime bet, not set up for halftime bets yet."
+0.1816491466649514,-110,nyk,nba,-105,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_assists,36.5,"Halftime bet, not set up for halftime bets yet."
+0.15789352271051446,-115,nyk,nba,-115,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points,32.5,"Halftime bet, not set up for halftime bets yet."
+0.17701818029211241,-125,nyk,nba,-115,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_rebounds_assists,38.5,"Halftime bet, not set up for halftime bets yet."
+0.17645853624354932,-116,sac,nba,-115,bet365,under,10m,jonas valanciunas,new orleans pelicans @ sacramento kings,points_rebounds_assists,15.5,successful bet
+0.1485808378270922,-105,nyk,nba,-105,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_rebounds,33.5,"Halftime bet, not set up for halftime bets yet."
+0.17556767509253615,-125,nyk,nba,-115,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_rebounds_assists,38.5,"Halftime bet, not set up for halftime bets yet."
+0.12054491587912103,-105,bos,nba,-105,bet365,under,0d 0m,payton pritchard,boston celtics @ new york knicks,ht_points,20.5,"Halftime bet, not set up for halftime bets yet."
+0.14207159295339633,-130,bos,nba,-120,bet365,under,0d 0m,payton pritchard,boston celtics @ new york knicks,ht_points_assists,23.5,"Halftime bet, not set up for halftime bets yet."
+0.1816491466649514,-110,nyk,nba,-105,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_assists,36.5,"Halftime bet, not set up for halftime bets yet."
+0.15789352271051446,-115,nyk,nba,-115,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points,32.5,"Halftime bet, not set up for halftime bets yet."
+0.11333948640186632,-110,sac,nba,-110,bet365,under,8m,malik monk,new orleans pelicans @ sacramento kings,points_rebounds,25.5,successful bet
+0.1872360972360969,110,sac,nba,110,bet365,under,8m,jonas valanciunas,new orleans pelicans @ sacramento kings,assists_rebounds,7.5,successful bet
+0.15652764076474773,-116,sac,nba,-115,bet365,under,8m,jonas valanciunas,new orleans pelicans @ sacramento kings,points_rebounds,13.5,successful bet
+0.1485808378270922,-105,nyk,nba,-105,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_rebounds,33.5,"Halftime bet, not set up for halftime bets yet."
+0.17701818029211241,-125,nyk,nba,-115,bet365,under,0d 0m,jalen brunson,boston celtics @ new york knicks,ht_points_rebounds_assists,38.5,"Halftime bet, not set up for halftime bets yet."
+0.14207159295339633,-125,bos,nba,-120,bet365,under,0d 0m,payton pritchard,boston celtics @ new york knicks,ht_points_assists,23.5,"Halftime bet, not set up for halftime bets yet."
+0.12308155623988767,-105,bos,nba,-105,bet365,under,0d 0m,payton pritchard,boston celtics @ new york knicks,ht_points,20.5,"Halftime bet, not set up for halftime bets yet."
+0.17330404333707203,125,sac,nba,135,bet365,under,0m,zach lavine,new orleans pelicans @ sacramento kings,three_pointers_made,2.5,successful bet
+0.1469720279720278,-240,sac,nba,-240,bet365,under,0m,jonas valanciunas,new orleans pelicans @ sacramento kings,steals,0.5,"bet odds, availability or price changed"
+0.2559085714285714,1000,sac,nba,1000,bet365,side,0m,zach lavine,new orleans pelicans @ sacramento kings,first_basket,0.0,successful bet
+0.102105065666042,120,nop,nba,120,bet365,under,0m,zion williamson,new orleans pelicans @ sacramento kings,steals_blocks,1.5,"bet odds, availability or price changed"
+0.10980969030968935,124,sac,nba,125,bet365,over,0m,keon ellis,new orleans pelicans @ sacramento kings,three_pointers_made,1.5,"bet odds, availability or price changed"
+0.2052517482517491,160,sac,nba,165,bet365,under,0m,demar derozan,new orleans pelicans @ sacramento kings,three_pointers_made,0.5,successful bet
+0.2154285714285707,110,nop,nba,125,bet365,under,0m,trey murphy iii,new orleans pelicans @ sacramento kings,turnovers,1.5,Failed to confirm bet placement
+0.1408713455219474,115,nop,nba,115,bet365,over,-7m,javonte green,new orleans pelicans @ sacramento kings,turnovers,0.5,successful bet
+0.16357268189381263,115,sac,nba,115,bet365,under,-7m,malik monk,new orleans pelicans @ sacramento kings,turnovers,2.5,successful bet
+0.13106293706293692,-250,sac,nba,-250,bet365,under,-7m,jonas valanciunas,new orleans pelicans @ sacramento kings,steals,0.5,successful bet
+0.1501713286713281,100,nop,nba,105,bet365,under,-7m,trey murphy iii,new orleans pelicans @ sacramento kings,turnovers,1.5,Failed to confirm bet placement
+0.16946583358178888,-119,uta,nba,-115,bet365,under,11m,jordan clarkson,utah jazz @ los angeles clippers,points_rebounds_assists,27.5,successful bet
+0.18147086635110382,-120,lac,nba,-115,bet365,under,11m,james harden,utah jazz @ los angeles clippers,points_rebounds,28.5,successful bet
+0.12033902648315437,-116,lac,nba,-115,bet365,under,11m,james harden,utah jazz @ los angeles clippers,points_rebounds_assists,38.5,successful bet
+0.23050349650349553,170,lac,nba,170,bet365,under,11m,nicolas batum,utah jazz @ los angeles clippers,steals_blocks,0.5,Failed to confirm bet placement
+0.23050349650349553,170,lac,nba,170,bet365,under,4m,nicolas batum,utah jazz @ los angeles clippers,steals_blocks,0.5,successful bet
+0.10302097902097833,130,uta,nba,130,bet365,under,4m,kyle filipowski,utah jazz @ los angeles clippers,steals,0.5,successful bet
+0.10656188307105835,135,lac,nba,135,bet365,under,4m,kawhi leonard,utah jazz @ los angeles clippers,three_pointers_made,1.5,successful bet
+0.1586574611828839,145,uta,nba,145,bet365,under,4m,keyonte george,utah jazz @ los angeles clippers,steals,0.5,successful bet
+0.3525058584679069,180,uta,nba,180,bet365,under,4m,jordan clarkson,utah jazz @ los angeles clippers,steals,0.5,successful bet
+0.17084830892378003,100,lac,nba,100,bet365,under,4m,nicolas batum,utah jazz @ los angeles clippers,steals,0.5,successful bet
+0.19654732895969917,135,uta,nba,145,bet365,over,4m,svi mykhailiuk,utah jazz @ los angeles clippers,turnovers,1.5,successful bet
+0.24001360404301508,110,lac,nba,125,bet365,under,4m,james harden,utah jazz @ los angeles clippers,three_pointers_made,2.5,successful bet
+0.1278942762863517,-160,uta,nba,-160,bet365,under,4m,jordan clarkson,utah jazz @ los angeles clippers,steals_blocks,1.5,successful bet
+0.20039860139860083,100,lac,nba,110,bet365,under,4m,norman powell,utah jazz @ los angeles clippers,turnovers,1.5,successful bet
+0.16944611836366524,-115,uta,nba,-110,bet365,under,4m,jordan clarkson,utah jazz @ los angeles clippers,turnovers,2.5,successful bet
+0.21374082554613455,120,lac,nba,132,bet365,under,4m,derrick jones jr.,utah jazz @ los angeles clippers,turnovers,0.5,successful bet
+0.2647163262269635,140,uta,nba,150,bet365,under,4m,isaiah collier,utah jazz @ los angeles clippers,three_pointers_made,0.5,successful bet
+0.18962660416506533,-130,uta,nba,-130,bet365,under,4m,jordan clarkson,utah jazz @ los angeles clippers,three_pointers_made,2.5,successful bet
+0.11734256226267124,-118,lac,nba,-115,bet365,under,4m,james harden,utah jazz @ los angeles clippers,1q_points,7.5,successful bet
+0.2666315237433993,125,lac,nba,135,bet365,under,4m,nicolas batum,utah jazz @ los angeles clippers,points,2.5,successful bet
+0.1273503887416925,-130,uta,nba,-125,bet365,under,4m,jordan clarkson,utah jazz @ los angeles clippers,rebounds,3.5,successful bet
+0.13742771779979715,-115,lac,nba,-110,bet365,under,-3m,james harden,utah jazz @ los angeles clippers,points_assists,32.5,successful bet
+0.20326692355263723,-110,lac,nba,-105,bet365,under,-3m,james harden,utah jazz @ los angeles clippers,turnovers,3.5,successful bet
+0.19581818181818086,160,lac,nba,160,bet365,under,-3m,ivica zubac,utah jazz @ los angeles clippers,steals,0.5,successful bet
+0.364084705882353,800,lac,nba,800,bet365,side,-3m,kawhi leonard,utah jazz @ los angeles clippers,first_basket,0.0,successful bet
