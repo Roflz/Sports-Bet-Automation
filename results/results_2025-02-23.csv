@@ -1,0 +1,80 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.12213181988843927,105,mil,nba,105,bet365,under,3h 30m,kyle kuzma,miami heat @ milwaukee bucks,points,15.5,successful bet
+0.1895150364509629,-128,mil,nba,-115,bet365,under,3h 30m,damian lillard,miami heat @ milwaukee bucks,three_pointers_made,3.5,successful bet
+0.2086553650292598,-105,mia,nba,100,bet365,under,3h 30m,tyler herro,miami heat @ milwaukee bucks,turnovers,2.5,successful bet
+0.14347552447552372,115,mil,nba,115,bet365,under,3h 25m,kyle kuzma,miami heat @ milwaukee bucks,steals,0.5,successful bet
+0.1280909090909087,-160,mia,nba,-160,bet365,under,3h 25m,davion mitchell,miami heat @ milwaukee bucks,turnovers,1.5,successful bet
+0.11023022058887502,-110,mil,nba,-110,bet365,under,3h 25m,brook lopez,miami heat @ milwaukee bucks,blocks,1.5,successful bet
+0.16076846089690222,185,mia,nba,185,bet365,under,3h 25m,kel'el ware,miami heat @ milwaukee bucks,turnovers,0.5,successful bet
+0.13903400373211605,115,mil,nba,120,bet365,under,3h 25m,kyle kuzma,miami heat @ milwaukee bucks,three_pointers_made,1.5,successful bet
+0.11507142592856819,-135,mia,nba,-135,bet365,over,3h 25m,kel'el ware,miami heat @ milwaukee bucks,three_pointers_made,0.5,successful bet
+0.15104142011834243,120,mil,nba,120,bet365,under,2h 57m,giannis antetokounmpo,miami heat @ milwaukee bucks,turnovers,2.5,successful bet
+0.10265311890050902,-115,gsw,nba,-115,bet365,under,3m,jimmy butler,dallas mavericks @ golden state warriors,points,21.5,successful bet
+0.16308415722208755,128,dal,nba,128,bet365,under,1m,naji marshall,dallas mavericks @ golden state warriors,steals,0.5,successful bet
+0.13858715769005597,-167,gsw,nba,-155,bet365,under,1m,stephen curry,dallas mavericks @ golden state warriors,three_pointers_made,5.5,successful bet
+0.11450739957716682,-225,gsw,nba,-225,bet365,under,1m,gui santos,dallas mavericks @ golden state warriors,steals,0.5,successful bet
+0.3252630303030304,850,gsw,nba,850,bet365,side,1m,stephen curry,dallas mavericks @ golden state warriors,first_basket,0.0,successful bet
+0.49094153846153854,950,dal,nba,950,bet365,side,-4m,kyrie irving,dallas mavericks @ golden state warriors,first_basket,0.0,successful bet
+0.12188854980635737,-105,gsw,nba,-105,bet365,under,-4m,moses moody,dallas mavericks @ golden state warriors,blocks,0.5,successful bet
+0.14968811554253844,-120,gsw,nba,-120,bet365,under,-4m,gary payton ii,dallas mavericks @ golden state warriors,steals,0.5,successful bet
+0.12928910114275916,100,gsw,nba,100,bet365,under,-4m,stephen curry,dallas mavericks @ golden state warriors,turnovers,2.5,successful bet
+0.12715162919272407,125,mil,nba,130,bet365,under,2h 25m,taurean prince,miami heat @ milwaukee bucks,three_pointers_made,1.5,successful bet
+0.10074550186163277,-120,mil,nba,-120,bet365,under,2h 17m,taurean prince,miami heat @ milwaukee bucks,points,8.5,successful bet
+0.1124151325029635,-110,mil,nba,-110,bet365,under,2h 17m,damian lillard,miami heat @ milwaukee bucks,points_assists,31.5,successful bet
+0.2795485804518056,130,lac,nba,140,bet365,under,51m,james harden,los angeles clippers @ indiana pacers,1q_assists,2.5,successful bet
+0.15915009128802188,100,lac,nba,100,bet365,under,51m,james harden,los angeles clippers @ indiana pacers,assists,8.5,successful bet
+0.19651748251748208,-125,lac,nba,-125,bet365,under,51m,james harden,los angeles clippers @ indiana pacers,turnovers,5.5,successful bet
+0.2034179389686193,-200,lac,nba,-190,bet365,under,51m,ivica zubac,los angeles clippers @ indiana pacers,steals_blocks,2.5,successful bet
+0.17137914259653297,130,lac,nba,140,bet365,under,51m,ivica zubac,los angeles clippers @ indiana pacers,turnovers,1.5,successful bet
+0.3392640976045223,130,ind,nba,140,bet365,under,51m,andrew nembhard,los angeles clippers @ indiana pacers,steals_blocks,1.5,successful bet
+0.34454323725055375,-121,ind,nba,115,bet365,under,51m,andrew nembhard,los angeles clippers @ indiana pacers,steals,1.5,successful bet
+0.13300103940548919,150,ind,nba,150,bet365,under,51m,myles turner,los angeles clippers @ indiana pacers,steals,0.5,successful bet
+0.12807501589319747,-220,lac,nba,-220,bet365,under,51m,ivica zubac,los angeles clippers @ indiana pacers,blocks,1.5,successful bet
+0.1335994185530967,-125,lac,nba,-120,bet365,under,51m,ivica zubac,los angeles clippers @ indiana pacers,points_assists,20.5,successful bet
+0.13638280802586605,-125,lac,nba,-120,bet365,under,51m,ivica zubac,los angeles clippers @ indiana pacers,points_rebounds,32.5,"Bet not made, odds don't match for ivica zubac
+Expected Line: 32.5, Expected Price: -125
+Actual Line: 315, Actual Price: -110"
+0.17370378538553088,-120,lac,nba,-115,bet365,under,38m,ivica zubac,los angeles clippers @ indiana pacers,points,18.5,successful bet
+0.4275926573426567,145,lac,nba,145,bet365,under,38m,ivica zubac,los angeles clippers @ indiana pacers,steals,0.5,successful bet
+0.15378085072822034,190,lac,nba,200,bet365,over,38m,kris dunn,los angeles clippers @ indiana pacers,three_pointers_made,1.5,"Bet not made, odds don't match for kris dunn
+Expected Line: 1.5, Expected Price: 190
+Actual Line: 05, Actual Price: -230"
+0.1241612986160926,-115,ind,nba,-115,bet365,under,38m,pascal siakam,los angeles clippers @ indiana pacers,points_assists,24.5,successful bet
+0.15378085072822034,190,lac,nba,200,bet365,over,35m,kris dunn,los angeles clippers @ indiana pacers,three_pointers_made,1.5,"Bet not made, odds don't match for kris dunn
+Expected Line: 1.5, Expected Price: 190
+Actual Line: 05, Actual Price: -230"
+0.15378085072822034,190,lac,nba,200,bet365,over,31m,kris dunn,los angeles clippers @ indiana pacers,three_pointers_made,1.5,"Bet not made, odds don't match for kris dunn
+Expected Line: 1.5, Expected Price: 190
+Actual Line: 05, Actual Price: -230"
+0.10772481072347254,-115,mil,nba,-115,bet365,under,1h 31m,damian lillard,miami heat @ milwaukee bucks,points_rebounds_assists,37.5,"bet odds, availability or price changed"
+0.15717016317016405,145,ind,nba,150,bet365,under,17m,ben sheppard,los angeles clippers @ indiana pacers,steals_blocks,0.5,successful bet
+0.10630642995348832,-135,ind,nba,-135,bet365,under,17m,obi toppin,los angeles clippers @ indiana pacers,steals,0.5,successful bet
+0.11936258783538035,115,lac,nba,115,bet365,under,17m,kris dunn,los angeles clippers @ indiana pacers,steals,1.5,successful bet
+0.22502671048328,128,ind,nba,128,bet365,under,17m,ben sheppard,los angeles clippers @ indiana pacers,steals,0.5,successful bet
+0.15748073891426426,130,ind,nba,130,bet365,under,17m,obi toppin,los angeles clippers @ indiana pacers,turnovers,0.5,successful bet
+0.1436463913445053,160,ind,nba,170,bet365,under,17m,t.j. mcconnell,los angeles clippers @ indiana pacers,steals_blocks,0.5,successful bet
+0.19692530120481944,1100,ind,nba,1100,bet365,side,8m,tyrese haliburton,los angeles clippers @ indiana pacers,first_basket,0.0,successful bet
+0.16940792540792438,140,ind,nba,150,bet365,under,8m,bennedict mathurin,los angeles clippers @ indiana pacers,steals_blocks,0.5,successful bet
+0.1437486513486508,128,ind,nba,128,bet365,under,8m,aaron nesmith,los angeles clippers @ indiana pacers,turnovers,0.5,successful bet
+0.7825448101265823,1000,lac,nba,1000,bet365,side,8m,james harden,los angeles clippers @ indiana pacers,first_basket,0.0,Failed to confirm bet placement
+0.7825448101265823,1000,lac,nba,1000,bet365,side,8m,james harden,los angeles clippers @ indiana pacers,first_basket,0.0,Failed to confirm bet placement
+0.7825448101265823,1000,lac,nba,1000,bet365,side,8m,james harden,los angeles clippers @ indiana pacers,first_basket,0.0,Failed to confirm bet placement
+0.11169734469158739,-111,lac,nba,-110,bet365,under,8m,ivica zubac,los angeles clippers @ indiana pacers,points_rebounds,31.5,successful bet
+0.1213379443908647,100,ind,nba,100,bet365,under,8m,ben sheppard,los angeles clippers @ indiana pacers,points_assists,5.5,successful bet
+0.11537763834348774,-125,ind,nba,-125,bet365,under,8m,t.j. mcconnell,los angeles clippers @ indiana pacers,points_assists,12.5,successful bet
+0.1734851814851811,100,mil,nba,100,bet365,under,1h 8m,giannis antetokounmpo,miami heat @ milwaukee bucks,assists,4.5,successful bet
+0.1377684537684546,145,mia,nba,145,bet365,under,1h 8m,bam adebayo,miami heat @ milwaukee bucks,turnovers,1.5,successful bet
+0.18589177493360193,-125,min,nba,-115,bet365,under,1h 12m,mike conley,oklahoma city thunder @ minnesota timberwolves,points_assists,14.5,successful bet
+0.18180350337038562,-122,min,nba,-115,bet365,under,1h 11m,mike conley,oklahoma city thunder @ minnesota timberwolves,points_rebounds_assists,17.5,successful bet
+0.21840970878901195,-125,min,nba,-120,bet365,under,1h 11m,mike conley,oklahoma city thunder @ minnesota timberwolves,points_rebounds,12.5,successful bet
+0.12141258741258826,155,okc,nba,155,bet365,under,1h 11m,luguentz dort,oklahoma city thunder @ minnesota timberwolves,steals,0.5,successful bet
+0.1596214752988955,130,okc,nba,140,bet365,under,1h 11m,jalen williams,oklahoma city thunder @ minnesota timberwolves,steals_blocks,1.5,successful bet
+0.28061338661338636,-140,okc,nba,-140,bet365,under,1h 11m,chet holmgren,oklahoma city thunder @ minnesota timberwolves,blocks,2.5,successful bet
+0.2694545454545449,114,okc,nba,130,bet365,under,1h 11m,chet holmgren,oklahoma city thunder @ minnesota timberwolves,steals,0.5,successful bet
+0.27418648018648,-151,okc,nba,-150,bet365,under,1h 11m,chet holmgren,oklahoma city thunder @ minnesota timberwolves,steals_blocks,3.5,successful bet
+0.21754262817326697,-125,min,nba,-125,bet365,under,1h 11m,mike conley,oklahoma city thunder @ minnesota timberwolves,points,9.5,successful bet
+0.16485824611434843,-135,cle,nba,-125,bet365,under,0d 0m,de'andre hunter,memphis grizzlies @ cleveland cavaliers,ht_points_rebounds,25.5,"Halftime bet, not set up for halftime bets yet."
+0.24135964035963972,100,cle,nba,105,bet365,under,0d 0m,de'andre hunter,memphis grizzlies @ cleveland cavaliers,ht_rebounds,6.5,"Halftime bet, not set up for halftime bets yet."
+0.12592615313127223,-125,cle,nba,-120,bet365,under,0d 0m,de'andre hunter,memphis grizzlies @ cleveland cavaliers,ht_points,18.5,"Halftime bet, not set up for halftime bets yet."
+0.13562582531150488,-118,min,nba,-115,bet365,under,18m,mike conley,oklahoma city thunder @ minnesota timberwolves,turnovers,1.5,successful bet
+0.1368742964352715,120,min,nba,120,bet365,over,18m,nickeil alexander-walker,oklahoma city thunder @ minnesota timberwolves,steals,0.5,successful bet

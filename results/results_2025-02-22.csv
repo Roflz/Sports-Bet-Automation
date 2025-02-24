@@ -1,0 +1,40 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.2626713286713281,115,lal,nba,128,bet365,under,3h 39m,jaxson hayes,los angeles lakers @ denver nuggets,turnovers,0.5,successful bet
+0.15934499315408124,-200,por,nba,-200,bet365,over,5h 7m,donovan clingan,charlotte hornets @ portland trail blazers,assists,0.5,successful bet
+0.20480419580419673,175,cha,nba,185,bet365,under,5h 7m,nick smith jr.,charlotte hornets @ portland trail blazers,steals_blocks,0.5,successful bet
+0.18351048951048884,125,cha,nba,125,bet365,under,5h 7m,nick smith jr.,charlotte hornets @ portland trail blazers,steals,0.5,successful bet
+0.10060337697665873,155,lal,nba,155,bet365,under,3h 37m,jaxson hayes,los angeles lakers @ denver nuggets,blocks,0.5,successful bet
+0.11930159898580919,-185,den,nba,-180,bet365,under,3h 37m,jamal murray,los angeles lakers @ denver nuggets,blocks,0.5,successful bet
+0.3302262778369268,-115,phx,nba,-115,bet365,under,7m,tyus jones,phoenix suns @ chicago bulls,points_rebounds,9.5,successful bet
+0.10019388645101013,-120,chi,nba,-120,bet365,under,7m,zach collins,phoenix suns @ chicago bulls,points_rebounds,11.5,"Bet not made, odds don't match for zach collins
+Expected Line: 11.5, Expected Price: -120
+Actual Line: 105, Actual Price: -110"
+0.15251529825936855,-120,chi,nba,-120,bet365,under,7m,tre jones,phoenix suns @ chicago bulls,points_assists,10.5,successful bet
+0.1124668962786221,-116,phx,nba,-115,bet365,under,7m,nick richards,phoenix suns @ chicago bulls,points_rebounds,16.5,successful bet
+0.2051448367583332,105,chi,nba,115,bet365,under,7m,zach collins,phoenix suns @ chicago bulls,turnovers,0.5,successful bet
+0.20703263021757262,-135,chi,nba,-130,bet365,under,7m,josh giddey,phoenix suns @ chicago bulls,blocks,0.5,successful bet
+0.34239160839160776,115,chi,nba,128,bet365,under,7m,tre jones,phoenix suns @ chicago bulls,turnovers,0.5,successful bet
+0.2594382826475844,110,chi,nba,120,bet365,under,7m,josh giddey,phoenix suns @ chicago bulls,steals_blocks,1.5,successful bet
+0.11617887375782018,140,chi,nba,140,bet365,under,7m,tre jones,phoenix suns @ chicago bulls,steals_blocks,0.5,successful bet
+0.4377371452077329,130,phx,nba,135,bet365,under,7m,tyus jones,phoenix suns @ chicago bulls,steals_blocks,0.5,Failed to confirm bet placement
+0.10221359647217738,-190,chi,nba,-190,bet365,under,7m,tre jones,phoenix suns @ chicago bulls,three_pointers_made,0.5,successful bet
+0.24316590306245459,-145,phx,nba,-145,bet365,under,7m,tyus jones,phoenix suns @ chicago bulls,three_pointers_made,1.5,successful bet
+0.11759933321483924,150,chi,nba,150,bet365,over,7m,kevin huerter,phoenix suns @ chicago bulls,points,9.5,"Bet not made, odds don't match for kevin huerter
+Expected Line: 9.5, Expected Price: 150
+Actual Line: 135, Actual Price: N/A"
+0.30184094784290993,-118,phx,nba,-115,bet365,under,7m,tyus jones,phoenix suns @ chicago bulls,points,7.5,successful bet
+0.202477715946138,-145,chi,nba,-135,bet365,under,7m,nikola vucevic,phoenix suns @ chicago bulls,rebounds,11.5,Failed to confirm bet placement
+0.16323188457763976,-140,phx,nba,-135,bet365,under,7m,nick richards,phoenix suns @ chicago bulls,rebounds,8.5,successful bet
+0.40784072564603474,125,phx,nba,135,bet365,under,7m,tyus jones,phoenix suns @ chicago bulls,rebounds,1.5,successful bet
+0.14237489414780335,-155,chi,nba,-150,bet365,under,7m,zach collins,phoenix suns @ chicago bulls,rebounds,4.5,"Bet not made, odds don't match for zach collins
+Expected Line: 4.5, Expected Price: -155
+Actual Line: 35, Actual Price: 100"
+0.1624108975137021,125,cha,nba,125,bet365,under,4h 50m,lamelo ball,charlotte hornets @ portland trail blazers,assists,6.5,Player image not found for lamelo ball from team cha.
+0.1231751802477856,105,cha,nba,105,bet365,under,4h 50m,lamelo ball,charlotte hornets @ portland trail blazers,points_rebounds_assists,37.5,"Bet not made, could not find all_props_button"
+0.1510528365440596,-115,cha,nba,-115,bet365,under,4h 47m,lamelo ball,charlotte hornets @ portland trail blazers,points_assists,33.5,successful bet
+0.12613887381342767,105,cha,nba,105,bet365,under,4h 47m,lamelo ball,charlotte hornets @ portland trail blazers,points_rebounds_assists,37.5,successful bet
+0.12607811700494562,110,cha,nba,110,bet365,under,4h 47m,lamelo ball,charlotte hornets @ portland trail blazers,three_pointers_made,3.5,successful bet
+0.17621862348178235,185,por,nba,195,bet365,over,4h 47m,deni avdija,charlotte hornets @ portland trail blazers,blocks,0.5,Failed to confirm bet placement
+0.1218745167875595,115,den,nba,115,bet365,under,3h 17m,nikola jokic,los angeles lakers @ denver nuggets,turnovers,2.5,successful bet
+0.1188494915885787,-180,lal,nba,-180,bet365,under,3h 17m,rui hachimura,los angeles lakers @ denver nuggets,steals_blocks,1.5,successful bet
+0.14467098545626095,105,lal,nba,110,bet365,under,3h 17m,jaxson hayes,los angeles lakers @ denver nuggets,steals_blocks,1.5,successful bet

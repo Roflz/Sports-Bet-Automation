@@ -1,0 +1,35 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.20084603857680755,-135,chi,nba,-130,bet365,under,-3m,josh giddey,chicago bulls @ new york knicks,steals_blocks,1.5,successful bet
+0.16209130329036078,-120,chi,nba,-115,bet365,under,-3m,ayo dosunmu,chicago bulls @ new york knicks,three_pointers_made,1.5,successful bet
+0.12577156177156112,130,nyk,nba,130,bet365,under,-3m,cameron payne,chicago bulls @ new york knicks,turnovers,0.5,successful bet
+0.2074676594584229,-137,mil,nba,-125,bet365,under,13m,damian lillard,los angeles clippers @ milwaukee bucks,assists,7.5,successful bet
+0.16837862137862092,115,mil,nba,115,bet365,under,13m,giannis antetokounmpo,los angeles clippers @ milwaukee bucks,assists,4.5,"Bet not made, could not find player giannis antetokounmpo"
+0.19778011360620007,115,mil,nba,120,bet365,under,8m,giannis antetokounmpo,los angeles clippers @ milwaukee bucks,assists,4.5,successful bet
+0.176097902097903,165,mil,nba,165,bet365,under,8m,taurean prince,los angeles clippers @ milwaukee bucks,steals,0.5,successful bet
+0.33546853146853045,165,mil,nba,165,bet365,under,8m,kyle kuzma,los angeles clippers @ milwaukee bucks,steals,0.5,successful bet
+0.16816748605725063,130,lac,nba,130,bet365,under,8m,ivica zubac,los angeles clippers @ milwaukee bucks,steals,0.5,successful bet
+0.21155533596838041,135,mil,nba,145,bet365,under,1m,damian lillard,los angeles clippers @ milwaukee bucks,three_pointers_made,2.5,successful bet
+0.17158762231769922,-160,mil,nba,-150,bet365,under,1m,damian lillard,los angeles clippers @ milwaukee bucks,steals,1.5,successful bet
+0.19126094130588467,-130,lac,nba,-125,bet365,under,1m,kawhi leonard,los angeles clippers @ milwaukee bucks,turnovers,2.5,successful bet
+0.14674725274725212,120,lac,nba,120,bet365,under,1m,ivica zubac,los angeles clippers @ milwaukee bucks,steals_blocks,1.5,successful bet
+0.19797547551359454,-110,mil,nba,-110,bet365,under,1m,aj green,los angeles clippers @ milwaukee bucks,steals,0.5,successful bet
+0.1964103545140718,-135,mil,nba,-130,bet365,under,1m,giannis antetokounmpo,los angeles clippers @ milwaukee bucks,turnovers,3.5,successful bet
+0.33050994086859553,-115,lac,nba,-110,bet365,under,1m,james harden,los angeles clippers @ milwaukee bucks,turnovers,4.5,successful bet
+0.24283516483516565,250,mil,nba,270,bet365,over,1m,kyle kuzma,los angeles clippers @ milwaukee bucks,blocks,0.5,successful bet
+0.13532534132534113,-210,lac,nba,-210,bet365,under,1m,kris dunn,los angeles clippers @ milwaukee bucks,turnovers,1.5,successful bet
+0.11853214242997656,-125,lac,nba,-125,bet365,under,1m,bogdan bogdanovic,los angeles clippers @ milwaukee bucks,points,10.5,successful bet
+0.171113795295613,-110,mil,nba,-110,bet365,under,-6m,damian lillard,los angeles clippers @ milwaukee bucks,steals_blocks,1.5,successful bet
+0.1032661476454591,125,mil,nba,125,bet365,under,-6m,taurean prince,los angeles clippers @ milwaukee bucks,three_pointers_made,1.5,successful bet
+0.11393006993007064,150,mil,nba,150,bet365,under,-6m,giannis antetokounmpo,los angeles clippers @ milwaukee bucks,steals_blocks,1.5,successful bet
+0.15800535634578258,140,lac,nba,140,bet365,under,-6m,amir coffey,los angeles clippers @ milwaukee bucks,turnovers,0.5,Failed to confirm bet placement
+0.13029329925022512,115,mil,nba,115,bet365,under,-6m,aj green,los angeles clippers @ milwaukee bucks,steals_blocks,0.5,Failed to place bet
+0.14195034739601695,-122,cha,nba,-115,bet365,under,-6m,moussa diabate,charlotte hornets @ denver nuggets,points_rebounds_assists,19.5,successful bet
+0.15563288495618144,-130,den,nba,-125,bet365,over,-6m,julian strawther,charlotte hornets @ denver nuggets,points_rebounds,9.5,successful bet
+0.13202666666666663,550,cha,nba,550,bet365,side,-6m,miles bridges,charlotte hornets @ denver nuggets,first_basket,0.0,successful bet
+0.13236829836829916,132,cha,nba,132,bet365,under,-6m,nick smith jr.,charlotte hornets @ denver nuggets,turnovers,1.5,successful bet
+0.19962358479776526,-135,cha,nba,-130,bet365,under,-6m,miles bridges,charlotte hornets @ denver nuggets,turnovers,2.5,Failed to confirm bet placement
+0.11282223040117846,140,den,nba,140,bet365,under,-6m,jamal murray,charlotte hornets @ denver nuggets,steals_blocks,1.5,successful bet
+0.25406321463856224,-130,cha,nba,-125,bet365,under,-6m,moussa diabate,charlotte hornets @ denver nuggets,points,9.5,successful bet
+0.11279710305056954,150,den,nba,150,bet365,over,-6m,julian strawther,charlotte hornets @ denver nuggets,points,9.5,"Bet not made, odds don't match for julian strawther
+Expected Line: 9.5, Expected Price: 150
+Actual Line: 75, Actual Price: 125"

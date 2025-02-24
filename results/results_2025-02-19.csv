@@ -1,0 +1,17 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.155575092,120,lal,nba,120,bet365,over,54m,gabe vincent,charlotte hornets @ los angeles lakers,assists,1.5,"Bet not made, could not find 1q_assists_filter_selector"
+0.155575092,120,lal,nba,120,bet365,over,50m,gabe vincent,charlotte hornets @ los angeles lakers,assists,1.5,"Bet not made, could not find assists prop"
+0.146015545,120,lal,nba,120,bet365,over,46m,gabe vincent,charlotte hornets @ los angeles lakers,assists,1.5,Failed to confirm bet placement
+0.124024847,-115,lal,nba,-115,bet365,under,46m,jaxson hayes,charlotte hornets @ los angeles lakers,points_rebounds,14.5,successful bet
+0.103825604,-105,lal,nba,-105,bet365,under,46m,jaxson hayes,charlotte hornets @ los angeles lakers,points_assists,9.5,successful bet
+0.115470588,105,cha,nba,105,bet365,under,46m,nick smith jr.,charlotte hornets @ los angeles lakers,steals,0.5,"Bet not made, could not find steals prop"
+0.170363636,155,cha,nba,160,bet365,under,36m,nick smith jr.,charlotte hornets @ los angeles lakers,steals_blocks,0.5,successful bet
+0.110923077,-125,lal,nba,-125,bet365,under,36m,austin reaves,charlotte hornets @ los angeles lakers,steals_blocks,1.5,successful bet
+0.17737816,-130,cha,nba,-130,bet365,under,36m,miles bridges,charlotte hornets @ los angeles lakers,blocks,0.5,successful bet
+0.128068106,110,cha,nba,110,bet365,under,36m,nick smith jr.,charlotte hornets @ los angeles lakers,steals,0.5,successful bet
+0.137144636,115,lal,nba,115,bet365,over,36m,gabe vincent,charlotte hornets @ los angeles lakers,turnovers,0.5,successful bet
+0.12169230769230707,120,lal,nba,120,bet365,under,-1m,rui hachimura,charlotte hornets @ los angeles lakers,turnovers,0.5,successful bet
+0.12768705488060286,-155,cha,nba,-155,bet365,under,-1m,jusuf nurkic,charlotte hornets @ los angeles lakers,three_pointers_made,0.5,successful bet
+0.18169230769230701,120,lal,nba,120,bet365,under,-5m,rui hachimura,charlotte hornets @ los angeles lakers,steals,0.5,successful bet
+0.1365185185185193,330,lal,nba,330,bet365,over,-5m,dorian finney-smith,charlotte hornets @ los angeles lakers,blocks,0.5,Failed to confirm bet placement
+0.14349400925923855,-125,cha,nba,-120,bet365,under,-5m,daquan jeffries,charlotte hornets @ los angeles lakers,points,4.5,successful bet

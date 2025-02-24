@@ -1,0 +1,19 @@
+70+70+30=170/2=85
+
+*open new window while logged in, hit close button - works but a little slow
+*random logout log back in
+*add pause button - needs work, need to not track pause button when paused for other things
+*add automation to reset location verifier
+bets come off the board before script is done
+loop to automate reset of bets 
+automation for if odds or availability of bet changes
+*make it so that failed bets do not count for removal in bet filtering - needs some work
+*make check for wager text during place bet work in either scenario
+*$1 bets for first basket
+handle_bet_changed needs to refresh and start at the next bet
+handle bad refresh
+increase timing for location reset
+fix double refresh on random logout
+
+fanduel
+fix for when team names take up 2 lines

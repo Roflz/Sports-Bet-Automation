@@ -1,0 +1,19 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.116376532,107,lal,nba,110,bet365,under,2m,lebron james,golden state warriors @ los angeles lakers,points_assists,36.5,successful bet
+0.201817857,124,gsw,nba,128,bet365,under,2m,stephen curry,golden state warriors @ los angeles lakers,turnovers,2.5,successful bet
+0.135228771,165,lal,nba,170,bet365,under,2m,austin reaves,golden state warriors @ los angeles lakers,steals,0.5,successful bet
+0.36858303,850,gsw,nba,850,bet365,side,2m,stephen curry,golden state warriors @ los angeles lakers,first_basket,0,"Bet not made, odds don't match for stephen curry
+Expected Line: 0.0, Expected Price: 850
+Actual Line: 850, Actual Price: N/A"
+0.263198135,260,lal,nba,280,bet365,over,2m,dorian finney-smith,golden state warriors @ los angeles lakers,blocks,0.5,successful bet
+0.129564436,-145,lal,nba,-140,bet365,under,2m,shake milton,golden state warriors @ los angeles lakers,steals,0.5,successful bet
+0.133662834,-110,lal,nba,-105,bet365,under,2m,lebron james,golden state warriors @ los angeles lakers,rebounds,8.5,successful bet
+0.201644412,170,den,nba,180,bet365,under,0d 0m,nikola jokic,orlando magic @ denver nuggets,ht_three_pointers_made,2.5,"Halftime bet, not set up for halftime bets yet."
+0.192495444,-165,ind,nba,-165,bet365,under,15m,thomas bryant,indiana pacers @ los angeles clippers,steals,0.5,successful bet
+0.101636342,155,ind,nba,155,bet365,under,15m,obi toppin,indiana pacers @ los angeles clippers,three_pointers_made,0.5,successful bet
+0.129619488,185,lac,nba,185,bet365,under,15m,nicolas batum,indiana pacers @ los angeles clippers,steals_blocks,0.5,successful bet
+0.158344688,125,ind,nba,135,bet365,under,15m,ben sheppard,indiana pacers @ los angeles clippers,steals_blocks,0.5,successful bet
+0.109874126,170,ind,nba,170,bet365,under,15m,t.j. mcconnell,indiana pacers @ los angeles clippers,steals_blocks,0.5,successful bet
+0.112108843,-285,ind,nba,-275,bet365,under,15m,bennedict mathurin,indiana pacers @ los angeles clippers,blocks,0.5,successful bet
+0.226732506,-110,ind,nba,-105,bet365,under,15m,bennedict mathurin,indiana pacers @ los angeles clippers,points,13.5,successful bet
+0.201644412,170,den,nba,180,bet365,under,0d 0m,nikola jokic,orlando magic @ denver nuggets,ht_three_pointers_made,2.5,"Halftime bet, not set up for halftime bets yet."
