@@ -1,6 +1,0 @@
-date,sport,event,bet_type,odds,wager,potential_payout,result
-2024-02-01,Football,Super Bowl LVIII,Moneyline,+150,50,125,Win
-2024-02-02,Basketball,Lakers vs Warriors,Spread,-110,100,190,Loss
-2024-02-03,Tennis,Australian Open Final,Over/Under,+200,75,225,Win
-2024-02-04,Baseball,Yankees vs Red Sox,Moneyline,-120,60,110,Win
-2024-02-05,Soccer,Champions League,Draw,+250,40,140,Pending

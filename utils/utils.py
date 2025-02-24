@@ -2,8 +2,10 @@ import csv
 import functools
 import os
 import re
+import smtplib
 import subprocess
 import webbrowser
+from email.mime.text import MIMEText
 
 import keyboard
 import mss
@@ -94,25 +96,29 @@ def capture_window(window_name=None):
     return cv2.cvtColor(np.array(img), cv2.COLOR_BGR2RGB)
 
 
-def find_control(control_image_path, window_name=None, threshold=0.8):
+def find_control(control_image_path, window_name=None, threshold=0.8, output_path="temp\\annotated_output.png"):
     """
     Locate a UI control in the given window using template matching and return its center coordinates.
+    The function also saves an annotated image to disk:
+      - If found, a rectangle is drawn around the control.
+      - If not found, "Control not found" is written on the image.
 
     :param window_name: The title of the window to capture.
     :param control_image_path: Path to the reference image of the control.
     :param threshold: Similarity threshold (default: 0.8).
-    :return: (center_x, center_y) coordinates of the control if found, otherwise None.
+    :param output_path: File path to save the annotated image.
+    :return: (center_x, center_y) coordinates if control is found, otherwise False.
     """
-    # Capture the window
+    # Capture the window image (ensure capture_window is defined elsewhere)
     window_image = capture_window(window_name=window_name)
     if window_image is None:
-        return None
+        return False
 
     # Load the reference control image
     control_image = cv2.imread(control_image_path, cv2.IMREAD_UNCHANGED)
     if control_image is None:
         print("Error: Could not load control image.")
-        return None
+        return False
 
     # Convert images to grayscale for template matching
     window_gray = cv2.cvtColor(window_image, cv2.COLOR_BGR2GRAY)
@@ -120,17 +126,30 @@ def find_control(control_image_path, window_name=None, threshold=0.8):
 
     # Perform template matching
     result = cv2.matchTemplate(window_gray, control_gray, cv2.TM_CCOEFF_NORMED)
-
-    # Get the best match location
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+
+    # Create a copy of the window image to annotate
+    annotated_image = window_image.copy()
 
     # Check if match confidence is above threshold
     if max_val >= threshold:
-        control_w, control_h = control_gray.shape[::-1]  # Get control width and height
-        center_x = max_loc[0] + control_w // 2  # Calculate center X
-        center_y = max_loc[1] + control_h // 2  # Calculate center Y
-        return center_x, center_y
+        control_w, control_h = control_gray.shape[::-1]
+        center_x = max_loc[0] + control_w // 2
+        center_y = max_loc[1] + control_h // 2
+
+        # Draw a rectangle around the found control
+        top_left = max_loc
+        bottom_right = (max_loc[0] + control_w, max_loc[1] + control_h)
+        cv2.rectangle(annotated_image, top_left, bottom_right, (0, 255, 0), 2)
+
+        # Save the annotated image
+        cv2.imwrite(output_path, annotated_image)
+        return (center_x, center_y)
     else:
+        # Annotate with a message if control is not found
+        cv2.putText(annotated_image, "Control not found", (10, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+        cv2.imwrite(output_path, annotated_image)
         return False
 
 
@@ -744,35 +763,60 @@ def is_bet_in_csv(player, bet_type, game, filename=f"results\\results_{datetime.
         return False
     return False
 
-
-def pause_and_log_failure(failure_message, bet_dict):
-    # Create a more descriptive failure message, including bet details like player, price, and lines
-    print_bet_details(bet_dict)
-    print(f"Failure: {failure_message}")
-    print("Press 'L' to log the failure and exit, or 'C' to continue without logging.")
-
-    while True:
-        key = keyboard.read_event().name  # Capture key press without suppressing
-        if key == 'l':  # Log failure and return False
-            append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv", failure_message)
-            time.sleep(1)
-            return False
-        elif key == 'c':  # Continue without logging
-            time.sleep(1)
-            return True
-
-def pause_and_print_failure(failure_message):
-    print(f"Failure: {failure_message}")
-    print("Press 'N' to move to the next book, or 'C' to continue.")
-
-    while True:
-        key = keyboard.read_event(suppress=True).name  # Capture key press
-        if key == 'l':  # Log failure and return False
-            time.sleep(1)
-            return False
-        elif key == 'c':  # Continue without logging
-            time.sleep(1)
-            return True
+# def pause_and_log_failure(failure_message, bet_dict):
+#     # Create a more descriptive failure message, including bet details like player, price, and lines
+#     print_bet_details(bet_dict)
+#     print(f"Failure: {failure_message}")
+#     print("Press 'Ctrl+L' to log the failure and move to next bet, or 'Ctrl+C' to continue without logging.")
+#
+#     result = None  # Store user choice
+#
+#     def set_result(value):
+#         nonlocal result
+#         result = value
+#
+#     # Register hotkeys
+#     keyboard.add_hotkey('ctrl+l', lambda: set_result(False))  # Log failure
+#     keyboard.add_hotkey('ctrl+c', lambda: set_result(True))   # Continue
+#
+#     # Wait for user input
+#     while result is None:
+#         time.sleep(0.1)
+#
+#     # Cleanup hotkeys
+#     keyboard.remove_hotkey('ctrl+l')
+#     keyboard.remove_hotkey('ctrl+c')
+#
+#     # Log failure if needed
+#     if result is False:
+#         append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv", failure_message)
+#
+#     return result
+#
+#
+# def pause_and_print_failure(failure_message):
+#     print(f"Failure: {failure_message}")
+#     print("Press 'Ctrl+N' to move to the next book, or 'Ctrl+C' to continue.")
+#
+#     result = None  # Store user choice
+#
+#     def set_result(value):
+#         nonlocal result
+#         result = value
+#
+#     # Register hotkeys
+#     keyboard.add_hotkey('ctrl+n', lambda: set_result(False))  # Move to next book
+#     keyboard.add_hotkey('ctrl+c', lambda: set_result(True))   # Continue
+#
+#     # Wait for user input
+#     while result is None:
+#         time.sleep(0.1)
+#
+#     # Cleanup hotkeys
+#     keyboard.remove_hotkey('ctrl+n')
+#     keyboard.remove_hotkey('ctrl+c')
+#
+#     return result
 
 def scroll_to_top():
     """Scrolls to the top of the page by simulating multiple scroll-up actions."""
@@ -820,10 +864,6 @@ def remove_matched_bets(bets_dict, csv_filepath):
                 bets_dict[book][league][game] = [
                     bet for bet in bets_dict[book][league][game]
                     if (bet["Player"].lower(), bet["Game"].lower(), bet["Type"].lower(), 'successful bet') not in filter_set
-                       # or next((entry[3] for entry in filter_set if
-                       #          entry[0].lower() == bet["Player"].lower() and
-                       #          entry[1].lower() == bet["Game"].lower() and
-                       #          entry[2].lower() == bet["Type"].lower()), None) != 'successful bet'
                 ]
                 # Remove game if no bets remain
                 if not bets_dict[book][league][game]:
@@ -836,23 +876,6 @@ def remove_matched_bets(bets_dict, csv_filepath):
         # Remove book if no leagues remain
         if not bets_dict[book]:
             del bets_dict[book]
-
-    # Remove corresponding entries from CSV
-    # filtered_csv_data = [
-    #     row for row in csv_data
-    #     if (row["Player"].lower(), row["Game"].lower(), row["Type"].lower(), 'successful bet') in filter_set
-    #     # or next((entry[3] for entry in filter_set if
-    #     #          entry[0].lower() == row["Player"].lower() and
-    #     #          entry[1].lower() == row["Game"].lower() and
-    #     #          entry[2].lower() == row["Type"].lower()), None) != 'successful bet'
-    # ]
-    #
-    # # Write updated CSV data back to file
-    # if csv_data and filtered_csv_data:  # Ensure there are rows to write
-    #     with open(csv_filepath, mode="w", newline="", encoding="utf-8") as file:
-    #         writer = csv.DictWriter(file, fieldnames=csv_data[0].keys())  # Preserve column headers
-    #         writer.writeheader()
-    #         writer.writerows(filtered_csv_data)
 
     return bets_dict
 
@@ -872,3 +895,87 @@ def has_nba_bets(bets_dict):
         if 'nba' in leagues:  # Check if 'nba' exists in the leagues under the bookmaker
             return True
     return False  # No NBA bets found
+
+def wait_for_resolution(failure_message, bet_dict=None):
+    # print(f"Player image not found for {player} from team {bet_dict['Team']}.")
+    # print("Press Ctrl + R to resume after resolving the issue, or Ctrl + S to skip bet.")
+    # send_sms_via_email('Script paused in Bet365', f"Error Message:\n"
+    #                                               f"Player image not found for {player} from team {bet_dict['Team']}.\n"
+    #                                               f"Press Ctrl + R to resume after resolving the issue, or Ctrl + S to skip bet.")
+    send_sms_via_email('Script paused in Bet365', f"Error Message:\n"
+                                                  f"{failure_message}\n"
+                                                  f"Press Alt + R to resume after resolving the issue, or Alt + S to skip bet.")
+    print(failure_message)
+    print("Press Alt + R to resume after resolving the issue, or Alt + S to skip bet.")
+
+    while True:
+        if keyboard.is_pressed("alt+r"):
+            print("Resuming...")
+            time.sleep(0.5)  # Avoid multiple detections
+            return True
+        elif keyboard.is_pressed("alt+s"):
+            print("Operation skipped.")
+            if bet_dict:
+                append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv",
+                                   failure_message)
+            time.sleep(0.5)  # Avoid multiple detections
+            return False
+
+
+def send_sms_via_email(subject, message):
+    email_sender = "mahnriley@gmail.com"
+    email_password = "ekgp pmkt iths nhza"
+
+    # Lookup carrier's email-to-SMS gateway (e.g., AT&T: number@txt.att.net)
+    sms_gateway = "9197603117@tmomail.net"
+
+    # Format the email with a subject
+    msg = MIMEText(message)
+    msg["Subject"] = subject
+    msg["From"] = email_sender
+    msg["To"] = sms_gateway
+
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.set_debuglevel(1)
+    server.starttls()
+    server.login(email_sender, email_password)
+    server.sendmail(email_sender, sms_gateway, message)
+    server.quit()
+
+def send_simple_email():
+    email_sender = "mahnriley@gmail.com"
+    email_password = "ekgp pmkt iths nhza"  # Use an app-specific password if necessary
+    sms_gateway = "9197603117@tmomail.net"  # Ensure this is correct for the intended recipient
+
+    # Construct a very simple email message with a subject header.
+    message = "Subject: Test\n\nHello, this is a test message."
+
+    try:
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(email_sender, email_password)
+        server.sendmail(email_sender, sms_gateway, message)
+        print("Email sent successfully!")
+    except Exception as e:
+        print("Error sending email:", e)
+    finally:
+        server.quit()
+
+def print_bets_summary(bets_dict):
+    output_lines = []
+    for book, leagues in bets_dict.items():
+        line = f"Book: {book}"
+        print(line)
+        output_lines.append(line)
+        for league, games in leagues.items():
+            line = f"  League: {league}"
+            print(line)
+            output_lines.append(line)
+            for game, bet_list in games.items():
+                line = f"    Game: '{game}' has {len(bet_list)} bet(s)"
+                print(line)
+                output_lines.append(line)
+        print()  # Print a blank line between books
+        output_lines.append("")
+    message = "\n".join(output_lines)
+    return message

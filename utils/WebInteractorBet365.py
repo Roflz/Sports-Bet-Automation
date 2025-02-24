@@ -21,7 +21,7 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         control_path = f"{CONTROLS}\\bet365\\login"
         steps_1 = [("login_button", 0.6), ("login_x", 0.8)]
         keyboard_input = [self.username, "tab", "tab", self.password, "enter"]
-        steps_2 = [("continue_after_login_button", 0.95), ("close_after_login_button", 0.95)]
+        steps_2 = [("continue_after_login_button", 0.95)]
         if not self.login(control_path, steps_1, keyboard_input, steps_2):
             return False
         return True
@@ -48,7 +48,7 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         control_path = f"{CONTROLS}\\bet365\\nba\\props\\{bet_type}.png"
         if not click_point_til_control_visible_click_control(control_path, 1661, 426, max_attempts=5,
                                                              delay=0.5, threshold=0.95):
-            if not pause_and_log_failure(f"Bet not made, could not find {bet_type} prop", bet_dict):
+            if not wait_for_resolution(f"Bet not made, could not find {bet_type} prop", bet_dict=bet_dict):
                 return False
         return True
 
@@ -57,9 +57,9 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         # Check if the player's image exists in the folder
         player_image_path = os.path.join(players_folder, f"{player}.png")
         if not os.path.exists(player_image_path):
-            input(f"Player image not found for {player} from team {bet_dict['Team']}. Press Enter to continue or resolve the issue.")
-            time.sleep(1)
-            pass  # fix the issue and continue
+            failure_message = f"Player image not found for {player} from team {bet_dict['Team']}."
+            if not wait_for_resolution(failure_message, bet_dict=bet_dict):
+                return False
 
         move_mouse_by(0, 50)
         pyautogui.click()
@@ -69,7 +69,7 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
 
         if not control_location:
             failure_message = f"Bet not made, could not find player {player}"
-            if not pause_and_log_failure(failure_message, bet_dict):
+            if not wait_for_resolution(failure_message, bet_dict=bet_dict):
                 return False
 
         position_offset = control_location[0] - 641
@@ -80,7 +80,7 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         elif position == 'side':
             screenshot, location = take_screenshot_side((control_location[0] - position_offset, control_location[1]), window_name=self.window_name)
         else:
-            if not pause_and_log_failure(f"Bet not made, invalid position '{position}' for {player}", bet_dict):
+            if not wait_for_resolution(f"Bet not made, invalid position '{position}' for {player}", bet_dict=bet_dict):
                 return False
             return False
 
@@ -106,7 +106,7 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
 
         error_message = f"Bet not made, odds don't match for {player}\n{expected_odds}\n{actual_odds}"
 
-        if not pause_and_log_failure(error_message, bet_dict):
+        if not wait_for_resolution(error_message, bet_dict=bet_dict):
             return False
         return False
 
@@ -121,11 +121,12 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
                 return True
         return False
 
-    def place_bet_nba(self, bet_dict):
+    def place_bet_nba(self, bet_dict, bet_amount, bet_amount_first_basket):
         # Wait and click the wager text, input the amount, and place the bet
         control_path = f"{CONTROLS}\\bet365"
         control_image_paths = [f"{control_path}\\price_changed.png", f"{control_path}\\odds_changed.png",
-                               f"{control_path}\\availability_changed.png"]  # Path to the image of the control you're looking for
+                               f"{control_path}\\availability_changed.png",
+                               f"{control_path}\\login\\random_logout_error.png"]  # Path to the image of the control you're looking for
         for control in control_image_paths:
             if find_control(control):
                 control_path = f"{CONTROLS}\\bet365\\price_changed_x.png"
@@ -135,21 +136,33 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
                 append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv",
                                    "bet odds, availability or price changed")
                 return
-        if not self.wait_and_click_log_failure_to_csv([f"{CONTROLS}\\bet365\\wager_text.png", f"{CONTROLS}\\bet365\\set_lwager.png"], bet_dict, "Failed to find wager text"):
+        if not self.wait_and_click_log_failure_to_csv([f"{CONTROLS}\\bet365\\wager_text.png", f"{CONTROLS}\\bet365\\set_wager.png"], bet_dict, "Failed to find wager text"):
             return
         # Bet 1 for first basket cuz thats all i am allowed
         if bet_dict['Position'] == 'side':
-            keyboard_input(['1'])
+            keyboard_input([str(bet_amount_first_basket)])
         else:
-            keyboard_input(["4"])
+            keyboard_input([str(bet_amount)])
         if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\place_bet_button.png", bet_dict, "Failed to place bet"):
             return
 
         # Wait for the bet confirmation and close the confirmation popup
-        time.sleep(1)
+        time.sleep(3)
         if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\bet_placed_x_button.png", bet_dict,
-                                   "Failed to confirm bet placement"):
-            return
+                                   "Failed to confirm bet placement", timeout=10, threshold=0.98):
+            if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\update_wager.png", bet_dict,
+                                   "Failed to confirm bet placement", timeout=10, threshold=0.98):
+                append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv",
+                                   "Failed to confirm bet placement")
+                return
+            else:
+                if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\place_bet_button.png", bet_dict,
+                                                              "Failed to place bet"):
+                    return
+                if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\bet_placed_x_button.png", bet_dict,
+                                                              "Failed to confirm bet placement", timeout=10,
+                                                              threshold=0.98):
+                    return
         append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv", "successful bet")
         return
 
@@ -159,14 +172,15 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         time.sleep(0.5)
         control_path = f"{CONTROLS}\\bet365\\login"
         if not wait_for_control_to_be_visible(f"{control_path}\\login_button.png", timeout=3):
-            if not self.wait_and_click_log_failure_to_console(f"{control_path}\\close_after_login_button.png", "Failed logging in", ):
-                return False
+            # if not self.wait_and_click_log_failure_to_console(f"{control_path}\\close_after_login_button.png", "Failed logging in", ):
+            #     return False
+            return True
         else:
             self.login_bet365()
         self.activate_browser()
         return True
 
-    def make_bets(self):
+    def make_bets(self, bet_amount, bet_amount_first_basket):
         self.initialize()
         for league, games in self.leagues.items():
             if league == 'nfl':  # Skip NFL for now since it is almost over
@@ -185,4 +199,4 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
                         continue
                     if self.choose_bet_nba(bet['Player'], bet['Line'], bet['Price Target'], bet['Position'], bet):
                         time.sleep(0.5)
-                        self.place_bet_nba(bet)
+                        self.place_bet_nba(bet, bet_amount, bet_amount_first_basket)

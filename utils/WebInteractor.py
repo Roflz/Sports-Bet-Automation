@@ -37,7 +37,7 @@ class WebInteractor(metaclass=ControlMeta):
                 break
 
         if not control_found:
-            if pause_and_log_failure(failure_message, bet_dict):  # Pause if failure, decide whether to continue
+            if wait_for_resolution(failure_message, bet_dict=bet_dict):  # Pause if failure, decide whether to continue
                 pass
             else:
                 self.refresh_page()  # Refresh page if failure
@@ -51,7 +51,7 @@ class WebInteractor(metaclass=ControlMeta):
                                               window_name=None):
         """Waits for a control to be visible, then clicks it. Logs failure, prints message, pauses for input, refreshes, and waits."""
         if not wait_for_control_to_be_visible(control_path, window_name=window_name, timeout=timeout, threshold=threshold):
-            if pause_and_print_failure(failure_message + ". Failure at wait to be visible"):
+            if wait_for_resolution(failure_message + ". Failure at wait to be visible"):
                 pass
             else:
                 self.refresh_page()  # Assuming you have a refresh method
@@ -102,18 +102,18 @@ class WebInteractor(metaclass=ControlMeta):
         if control:
             control_path = f"{control_path}\\{league}\\{control}.png"
             if not wait_for_control_to_be_visible(control_path, timeout=5):
-                if not pause_and_print_failure(f"Failed to find league button for {league}"):
+                if not wait_for_resolution(f"Failed to find league button for {league}"):
                     return False
             if not click_control(control_path):
-                if not pause_and_print_failure(f"Failed to click league button for {league}"):
+                if not wait_for_resolution(f"Failed to click league button for {league}"):
                     return False
         return True
 
     def open_chrome_and_wait_for_window(self, url, window_name):
         if not open_chrome(url):
-            if not pause_and_print_failure(f"Failed to open chrome window at {url}"):
+            if not wait_for_resolution(f"Failed to open chrome window at {url}"):
                 return False
         if not wait_for_window_to_be_visible(window_name):
-            if not pause_and_print_failure(f"Chrome window did not become visible at {url}"):
+            if not wait_for_resolution(f"Chrome window did not become visible at {url}"):
                 return False
         return True

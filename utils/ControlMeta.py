@@ -24,7 +24,7 @@ class ControlMeta(type):
     @staticmethod
     def should_exclude(method_name):
         # List of methods to exclude from wrapping
-        excluded_methods = ['initialize', 'login_bet365', 'login', 'wait_and_click_log_failure_to_csv', 'wait_and_click_log_failure_to_console', 'activate_browser', 'refresh_page']
+        excluded_methods = ['initialize', 'login_bet365', 'login', 'wait_and_click_log_failure_to_csv', 'wait_and_click_log_failure_to_console', 'activate_browser', 'refresh_page', 'make_bets']
         return method_name in excluded_methods
 
 
@@ -33,7 +33,7 @@ def toggle_pause():
     control_flags["pause"] = not control_flags["pause"]
     # Toggle pause state
     if control_flags["pause"]:
-        print("Script Paused... Press P to Resume")
+        print("Script Paused... Press Shift+P to Resume")
     else:
         print("Script Resumed!")
 
@@ -52,25 +52,6 @@ def handle_pause():
     """Pause the execution based on the global flag."""
     while control_flags["pause"]:
         time.sleep(0.1)  # Sleep to prevent busy-waiting
-
-#  Checks if availability or odds of bet changed
-# def bet_changed():
-#     control_path = f"{CONTROLS}\\bet365"
-#     control_image_paths = [f"{control_path}\\price_changed.png", f"{control_path}\\odds_changed.png", f"{control_path}\\availability_changed.png"]  # Path to the image of the control you're looking for
-#     for control in control_image_paths:
-#         if find_control(control):
-#             return True
-#     return False
-
-#  Handles if the odds or availability changed on the bet after choosing it
-# def handle_bet_changed():
-#     web_interactor_bet365 = control_state.get_web_interactor_bet365()  # Retrieve instance
-#     control_path = f"{CONTROLS}\\bet365\\price_changed_x.png"
-#     print('odds or availability changed on bet')
-#     if not web_interactor_bet365.wait_and_click_log_failure_to_console(control_path,
-#                                                                        "Could not find x to cancel bet"):
-#         return False
-#     web_interactor_bet365.refresh_page()
 
 #  Checks if there was a random logout
 def random_logout():
@@ -112,19 +93,6 @@ def reset_location_verifier():
 
 def handle_reset_location_verifier():
     web_interactor_bet365 = control_state.get_web_interactor_bet365()  # Retrieve instance
-    # control_path = f"{CONTROLS}\\bet365\\reset_location_verifier_question_mark.png"
-    #
-    # if not web_interactor_bet365.wait_and_click_log_failure_to_console(control_path, "Could not find question mark to reset location verifier"):
-    #     return False
-    # time.sleep(1)
-    # control_path = f"{CONTROLS}\\bet365\\location_verifier_windows_link.png"
-    # window_name = 'FAQ - Google Chrome'
-    # if not web_interactor_bet365.wait_and_click_log_failure_to_console(control_path, "Could not find windows link to reset location verifier", window_name=window_name):
-    #     return False
-    # control_path = f"{CONTROLS}\\bet365\\location_verifier_download_for_windows.png"
-    # window_name = 'install.xpoint.tech'
-    # if not web_interactor_bet365.wait_and_click_log_failure_to_console(control_path, "Could not find download for windows link to reset location verifier", window_name=window_name):
-    #     return False
     keyboard_input(['win', 'XpointVerifyGeolocationInstaller.exe', 'enter'])
     time.sleep(4)
     web_interactor_bet365.refresh_page()
