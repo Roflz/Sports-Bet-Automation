@@ -1,0 +1,180 @@
+EV,Price Target,Team,league,Price,Book,Position,Time Until,Player,Game,Type,Line,result
+0.1572754150274825,-129,bkn,nba,-120,bet365,under,2m,day'ron sharpe,brooklyn nets @ washington wizards,points_rebounds_assists,18.5,successful bet
+0.27055968903785665,-122,was,nba,-120,bet365,under,2m,carlton carrington,brooklyn nets @ washington wizards,points_rebounds,12.5,successful bet
+0.15039457610543316,-145,was,nba,-135,bet365,over,2m,richaun holmes,brooklyn nets @ washington wizards,points_assists,9.5,successful bet
+0.13329115607800832,-125,bkn,nba,-125,bet365,under,2m,day'ron sharpe,brooklyn nets @ washington wizards,points_assists,11.5,successful bet
+0.16313185185185175,1600,was,nba,1600,bet365,side,2m,kyshawn george,brooklyn nets @ washington wizards,first_basket,0.0,successful bet
+0.11873103819257595,115,bkn,nba,115,bet365,under,2m,trendon watford,brooklyn nets @ washington wizards,steals,0.5,successful bet
+0.2613278974483791,-135,bkn,nba,-135,bet365,under,2m,tyrese martin,brooklyn nets @ washington wizards,steals,0.5,successful bet
+0.11636135957066111,120,was,nba,120,bet365,under,2m,carlton carrington,brooklyn nets @ washington wizards,steals_blocks,0.5,successful bet
+0.10639602502760483,190,bkn,nba,190,bet365,under,2m,cameron johnson,brooklyn nets @ washington wizards,steals,0.5,successful bet
+0.11808685829044796,-161,bkn,nba,-155,bet365,under,2m,keon johnson,brooklyn nets @ washington wizards,steals,1.5,successful bet
+0.20802844346664495,130,bkn,nba,130,bet365,under,2m,cameron johnson,brooklyn nets @ washington wizards,turnovers,1.5,Failed to confirm bet placement
+0.10932867132867208,180,bkn,nba,180,bet365,over,2m,keon johnson,brooklyn nets @ washington wizards,blocks,0.5,successful bet
+0.19123227592079997,100,bkn,nba,100,bet365,under,2m,tyrese martin,brooklyn nets @ washington wizards,steals_blocks,0.5,successful bet
+0.13502564102564066,-120,was,nba,-120,bet365,under,2m,carlton carrington,brooklyn nets @ washington wizards,steals,0.5,successful bet
+0.1084844339334131,-140,was,nba,-140,bet365,under,2m,carlton carrington,brooklyn nets @ washington wizards,three_pointers_made,1.5,successful bet
+0.10446537533263289,155,was,nba,155,bet365,under,2m,marcus smart,brooklyn nets @ washington wizards,steals,0.5,successful bet
+0.21988440970793863,124,was,nba,125,bet365,under,2m,jordan poole,brooklyn nets @ washington wizards,turnovers,2.5,successful bet
+0.10261538461538518,230,sac,nba,230,bet365,over,2h 48m,domantas sabonis,charlotte hornets @ sacramento kings,blocks,0.5,successful bet
+0.23892822966507082,135,sac,nba,145,bet365,under,2h 48m,malik monk,charlotte hornets @ sacramento kings,steals_blocks,1.5,successful bet
+0.10365034965034903,100,cha,nba,100,bet365,under,2h 48m,miles bridges,charlotte hornets @ sacramento kings,steals_blocks,1.5,successful bet
+0.1568097042622175,125,sac,nba,132,bet365,under,2h 48m,malik monk,charlotte hornets @ sacramento kings,blocks,0.5,successful bet
+0.21140983864053536,-108,cha,nba,105,bet365,under,2h 48m,miles bridges,charlotte hornets @ sacramento kings,blocks,0.5,successful bet
+0.10691866028708064,100,cha,nba,100,bet365,under,2h 39m,jusuf nurkic,charlotte hornets @ sacramento kings,blocks,0.5,successful bet
+0.200526630282355,110,atl,nba,115,bet365,under,9m,onyeka okongwu,miami heat @ atlanta hawks,assists,2.5,"bet odds, availability or price changed"
+0.21308808155490042,-122,atl,nba,-115,bet365,over,9m,georges niang,miami heat @ atlanta hawks,points_rebounds_assists,17.5,"Bet not made, could not find player georges niang"
+0.20434488788729294,-125,atl,nba,-120,bet365,over,9m,georges niang,miami heat @ atlanta hawks,points_rebounds,15.5,successful bet
+0.18617397788989415,-125,atl,nba,-120,bet365,over,9m,georges niang,miami heat @ atlanta hawks,points_assists,12.5,successful bet
+0.2518937824767478,-145,atl,nba,-120,bet365,under,9m,trae young,miami heat @ atlanta hawks,points_rebounds_assists,43.5,Failed to confirm bet placement
+0.2518937824767478,-145,atl,nba,-120,bet365,under,9m,trae young,miami heat @ atlanta hawks,points_rebounds_assists,43.5,Failed to confirm bet placement
+0.23860732120382747,-125,atl,nba,-115,bet365,under,9m,trae young,miami heat @ atlanta hawks,points_assists,39.5,successful bet
+0.25895432519464845,-135,atl,nba,-115,bet365,under,9m,trae young,miami heat @ atlanta hawks,points_rebounds,32.5,successful bet
+0.13263186813186745,115,atl,nba,120,bet365,over,9m,georges niang,miami heat @ atlanta hawks,three_pointers_made,2.5,successful bet
+0.12842092601276217,-142,mia,nba,-140,bet365,over,9m,kel'el ware,miami heat @ atlanta hawks,three_pointers_made,0.5,successful bet
+0.363866706100071,110,atl,nba,140,bet365,under,1m,onyeka okongwu,miami heat @ atlanta hawks,assists,2.5,successful bet
+0.21186380632404986,-122,atl,nba,-115,bet365,over,-1m,georges niang,miami heat @ atlanta hawks,points_rebounds_assists,17.5,"odds don't match for georges niang
+Expected Line: 17.5, Expected Price: -122
+Actual Line: 75, Actual Price: -115"
+0.18851530861428556,-145,atl,nba,-135,bet365,under,-1m,trae young,miami heat @ atlanta hawks,points_rebounds_assists,43.5,successful bet
+0.18111288711288664,-140,atl,nba,-140,bet365,under,-1m,onyeka okongwu,miami heat @ atlanta hawks,turnovers,1.5,successful bet
+0.26334018362589756,-110,atl,nba,-105,bet365,under,-1m,trae young,miami heat @ atlanta hawks,turnovers,4.5,successful bet
+0.3152242424242423,900,mia,nba,900,bet365,side,-1m,tyler herro,miami heat @ atlanta hawks,first_basket,0.0,successful bet
+0.11427972027972008,-155,atl,nba,-155,bet365,under,-1m,terance mann,miami heat @ atlanta hawks,steals,0.5,successful bet
+0.12841103643438362,160,atl,nba,160,bet365,under,-1m,onyeka okongwu,miami heat @ atlanta hawks,steals,0.5,successful bet
+0.15931717448291496,128,mia,nba,128,bet365,under,-1m,duncan robinson,miami heat @ atlanta hawks,steals_blocks,0.5,successful bet
+0.14333755940307433,-115,mia,nba,-115,bet365,under,-1m,duncan robinson,miami heat @ atlanta hawks,steals,0.5,successful bet
+0.2471416070753326,-135,atl,nba,-115,bet365,under,-1m,mouhamed gueye,miami heat @ atlanta hawks,blocks,0.5,successful bet
+0.12330069930069873,110,atl,nba,110,bet365,under,-1m,dyson daniels,miami heat @ atlanta hawks,turnovers,1.5,successful bet
+0.21157788048414475,-120,atl,nba,-115,bet365,over,-8m,georges niang,miami heat @ atlanta hawks,points_rebounds_assists,17.5,"odds don't match for georges niang
+Expected Line: 17.5, Expected Price: -120
+Actual Line: 75, Actual Price: -115"
+0.10116783216783298,185,mia,nba,185,bet365,under,-8m,tyler herro,miami heat @ atlanta hawks,steals,0.5,successful bet
+0.17093993995939133,-125,atl,nba,-125,bet365,under,-8m,trae young,miami heat @ atlanta hawks,points,28.5,successful bet
+0.11184360689705174,-115,mia,nba,-115,bet365,under,-8m,tyler herro,miami heat @ atlanta hawks,points,26.5,successful bet
+0.11400504881667144,-123,atl,nba,-120,bet365,under,-8m,caris levert,miami heat @ atlanta hawks,points,12.5,successful bet
+0.16854077225714278,-115,min,nba,-110,bet365,under,14m,mike conley,minnesota timberwolves @ oklahoma city thunder,points,8.5,successful bet
+0.11469327006838716,-111,min,nba,-110,bet365,under,10m,mike conley,minnesota timberwolves @ oklahoma city thunder,points_rebounds,11.5,successful bet
+0.13566539636275032,-130,min,nba,-130,bet365,over,10m,jaylen clark,minnesota timberwolves @ oklahoma city thunder,three_pointers_made,0.5,Player image not found for jaylen clark from team min.
+0.1572117882117875,125,okc,nba,125,bet365,under,10m,isaiah hartenstein,minnesota timberwolves @ oklahoma city thunder,turnovers,1.5,successful bet
+0.13566539636275032,-130,min,nba,-130,bet365,over,7m,jaylen clark,minnesota timberwolves @ oklahoma city thunder,three_pointers_made,0.5,Player image not found for jaylen clark from team min.
+0.13566539636275032,-130,min,nba,-130,bet365,over,2m,jaylen clark,minnesota timberwolves @ oklahoma city thunder,three_pointers_made,0.5,"Player image not found for jaylen clark from team min.
+See readme at https://github.com/Roflz/Sports-Bet-Automation for instructions to resolve."
+0.1187639559001282,-115,min,nba,-115,bet365,over,2m,terrence shannon jr.,minnesota timberwolves @ oklahoma city thunder,three_pointers_made,0.5,successful bet
+0.10065268065267959,145,okc,nba,145,bet365,over,2m,alex caruso,minnesota timberwolves @ oklahoma city thunder,rebounds,3.5,successful bet
+0.13566539636275032,-130,min,nba,-130,bet365,over,0m,jaylen clark,minnesota timberwolves @ oklahoma city thunder,three_pointers_made,0.5,"Player image not found for jaylen clark from team min.
+See readme at https://github.com/Roflz/Sports-Bet-Automation for instructions to resolve."
+0.13406332129409,-130,min,nba,-130,bet365,over,-1m,jaylen clark,minnesota timberwolves @ oklahoma city thunder,three_pointers_made,0.5,"Player image not found for jaylen clark from team min.
+See readme at https://github.com/Roflz/Sports-Bet-Automation for instructions to resolve."
+0.15139997328348395,-125,was,nba,-115,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_rebounds,2.5,"Halftime bet, not set up for halftime bets yet."
+0.18309090909090991,160,bkn,nba,160,bet365,under,0d 0m,cameron johnson,brooklyn nets @ washington wizards,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.16545198768867528,-115,was,nba,-110,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds_assists,13.5,"Halftime bet, not set up for halftime bets yet."
+0.15646169560776224,125,was,nba,125,bet365,under,0d 0m,kyshawn george,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.19898734394439865,100,was,nba,105,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.11480893300248224,120,was,nba,120,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_rebounds,1.5,"Halftime bet, not set up for halftime bets yet."
+0.13889346270168149,-120,bkn,nba,-115,bet365,under,0d 0m,keon johnson,brooklyn nets @ washington wizards,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.19270811200734433,-135,was,nba,-120,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.17577977626950086,100,was,nba,100,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds,10.5,"Halftime bet, not set up for halftime bets yet."
+0.10306642541050196,-125,was,nba,-125,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_points_rebounds,8.5,"Halftime bet, not set up for halftime bets yet."
+0.18059287386833142,-130,ind,nba,-115,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_points_rebounds,9.5,"Halftime bet, not set up for halftime bets yet."
+0.10975497567447992,-170,ind,nba,-170,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_rebounds,4.5,"Halftime bet, not set up for halftime bets yet."
+0.11727672327672269,-105,ind,nba,-105,bet365,under,0d 0m,andrew nembhard,denver nuggets @ indiana pacers,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.14714685314685252,100,ind,nba,100,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.10951411551411536,-270,ind,nba,-270,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.21664661514094152,120,ind,nba,130,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_points,4.5,"Halftime bet, not set up for halftime bets yet."
+0.2304127445588113,120,ind,nba,125,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_steals_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.1485137084264097,-182,ind,nba,-180,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.25789065479974527,-110,det,nba,-110,bet365,under,0d 0m,malik beasley,los angeles clippers @ detroit pistons,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.12037278145172738,-120,det,nba,-120,bet365,under,0d 0m,dennis schroder,los angeles clippers @ detroit pistons,ht_points,7.5,"Halftime bet, not set up for halftime bets yet."
+0.15139997328348395,-125,was,nba,-115,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_rebounds,2.5,"Halftime bet, not set up for halftime bets yet."
+0.18309090909090991,160,bkn,nba,160,bet365,under,0d 0m,cameron johnson,brooklyn nets @ washington wizards,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.16545198768867528,-115,was,nba,-110,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds_assists,13.5,"Halftime bet, not set up for halftime bets yet."
+0.15646169560776224,125,was,nba,125,bet365,under,0d 0m,kyshawn george,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.19898734394439865,100,was,nba,105,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.11480893300248224,120,was,nba,120,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_rebounds,1.5,"Halftime bet, not set up for halftime bets yet."
+0.13889346270168149,-120,bkn,nba,-115,bet365,under,0d 0m,keon johnson,brooklyn nets @ washington wizards,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.19270811200734433,-135,was,nba,-120,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.17577977626950086,100,was,nba,100,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds,10.5,"Halftime bet, not set up for halftime bets yet."
+0.10306642541050196,-125,was,nba,-125,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_points_rebounds,8.5,"Halftime bet, not set up for halftime bets yet."
+0.18059287386833142,-130,ind,nba,-115,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_points_rebounds,9.5,"Halftime bet, not set up for halftime bets yet."
+0.10975497567447992,-170,ind,nba,-170,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_rebounds,4.5,"Halftime bet, not set up for halftime bets yet."
+0.11727672327672269,-105,ind,nba,-105,bet365,under,0d 0m,andrew nembhard,denver nuggets @ indiana pacers,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.14714685314685252,100,ind,nba,100,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.10951411551411536,-270,ind,nba,-270,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.21664661514094152,120,ind,nba,130,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_points,4.5,"Halftime bet, not set up for halftime bets yet."
+0.2304127445588113,120,ind,nba,125,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_steals_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.1485137084264097,-182,ind,nba,-180,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.25789065479974527,-110,det,nba,-110,bet365,under,0d 0m,malik beasley,los angeles clippers @ detroit pistons,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.12037278145172738,-120,det,nba,-120,bet365,under,0d 0m,dennis schroder,los angeles clippers @ detroit pistons,ht_points,7.5,"Halftime bet, not set up for halftime bets yet."
+0.15251980869372136,-125,was,nba,-115,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_rebounds,2.5,"Halftime bet, not set up for halftime bets yet."
+0.18309090909090991,160,bkn,nba,160,bet365,under,0d 0m,cameron johnson,brooklyn nets @ washington wizards,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.16545198768867528,-115,was,nba,-110,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds_assists,13.5,"Halftime bet, not set up for halftime bets yet."
+0.15646169560776224,125,was,nba,125,bet365,under,0d 0m,kyshawn george,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.19898734394439865,100,was,nba,105,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.11480893300248224,120,was,nba,120,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_rebounds,1.5,"Halftime bet, not set up for halftime bets yet."
+0.13889346270168149,-120,bkn,nba,-115,bet365,under,0d 0m,keon johnson,brooklyn nets @ washington wizards,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.19270811200734433,-135,was,nba,-120,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.17577977626950086,100,was,nba,100,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds,10.5,"Halftime bet, not set up for halftime bets yet."
+0.10306642541050196,-125,was,nba,-125,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_points_rebounds,8.5,"Halftime bet, not set up for halftime bets yet."
+0.18059287386833142,-130,ind,nba,-115,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_points_rebounds,9.5,"Halftime bet, not set up for halftime bets yet."
+0.10975497567447992,-170,ind,nba,-170,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_rebounds,4.5,"Halftime bet, not set up for halftime bets yet."
+0.11727672327672269,-105,ind,nba,-105,bet365,under,0d 0m,andrew nembhard,denver nuggets @ indiana pacers,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.14714685314685252,100,ind,nba,100,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.10951411551411536,-270,ind,nba,-270,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.21664661514094152,120,ind,nba,130,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_points,4.5,"Halftime bet, not set up for halftime bets yet."
+0.2304127445588113,120,ind,nba,125,bet365,under,0d 0m,pascal siakam,denver nuggets @ indiana pacers,ht_steals_blocks,0.5,"Halftime bet, not set up for halftime bets yet."
+0.1485137084264097,-182,ind,nba,-180,bet365,under,0d 0m,ben sheppard,denver nuggets @ indiana pacers,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.12037278145172738,-120,det,nba,-120,bet365,under,0d 0m,dennis schroder,los angeles clippers @ detroit pistons,ht_points,7.5,"Halftime bet, not set up for halftime bets yet."
+0.15251980869372136,-125,was,nba,-115,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_rebounds,2.5,"Halftime bet, not set up for halftime bets yet."
+0.18309090909090991,160,bkn,nba,160,bet365,under,0d 0m,cameron johnson,brooklyn nets @ washington wizards,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.16545198768867528,-115,was,nba,-110,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds_assists,13.5,"Halftime bet, not set up for halftime bets yet."
+0.15646169560776224,125,was,nba,125,bet365,under,0d 0m,kyshawn george,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.19898734394439865,100,was,nba,105,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_turnovers,2.5,"Halftime bet, not set up for halftime bets yet."
+0.11480893300248224,120,was,nba,120,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_rebounds,1.5,"Halftime bet, not set up for halftime bets yet."
+0.13889346270168149,-120,bkn,nba,-115,bet365,under,0d 0m,keon johnson,brooklyn nets @ washington wizards,ht_steals,0.5,"Halftime bet, not set up for halftime bets yet."
+0.19270811200734433,-135,was,nba,-120,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_turnovers,0.5,"Halftime bet, not set up for halftime bets yet."
+0.17577977626950086,100,was,nba,100,bet365,under,0d 0m,carlton carrington,brooklyn nets @ washington wizards,ht_points_rebounds,10.5,"Halftime bet, not set up for halftime bets yet."
+0.10306642541050196,-125,was,nba,-125,bet365,under,0d 0m,corey kispert,brooklyn nets @ washington wizards,ht_points_rebounds,8.5,"Halftime bet, not set up for halftime bets yet."
+0.12037278145172738,-120,det,nba,-120,bet365,under,0d 0m,dennis schroder,los angeles clippers @ detroit pistons,ht_points,7.5,"Halftime bet, not set up for halftime bets yet."
+0.12037278145172738,-120,det,nba,-120,bet365,under,0d 0m,dennis schroder,los angeles clippers @ detroit pistons,ht_points,7.5,"Halftime bet, not set up for halftime bets yet."
+0.10010497702051291,-160,mia,nba,-160,bet365,under,0d 0m,tyler herro,miami heat @ atlanta hawks,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.32035664335664243,145,atl,nba,145,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_three_pointers_made,1.5,"Halftime bet, not set up for halftime bets yet."
+0.3126291755801178,-105,atl,nba,-105,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points,19.5,"Halftime bet, not set up for halftime bets yet."
+0.30684902985063617,-125,atl,nba,-115,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points_assists,30.5,"Halftime bet, not set up for halftime bets yet."
+0.28961885417988537,-115,atl,nba,-115,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points_rebounds,22.5,"Halftime bet, not set up for halftime bets yet."
+0.31029430518459894,-105,atl,nba,-105,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points_rebounds_assists,32.5,"Halftime bet, not set up for halftime bets yet."
+0.2544662834200197,-130,atl,nba,-120,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_turnovers,4.5,"Halftime bet, not set up for halftime bets yet."
+0.12972790845518062,-110,atl,nba,-110,bet365,under,0d 0m,onyeka okongwu,miami heat @ atlanta hawks,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.1418755485466881,-125,mia,nba,-120,bet365,under,0d 0m,tyler herro,miami heat @ atlanta hawks,ht_points,20.5,"Halftime bet, not set up for halftime bets yet."
+0.2544662834200197,-130,atl,nba,-120,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_turnovers,4.5,"Halftime bet, not set up for halftime bets yet."
+0.32380131976582827,145,atl,nba,145,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_three_pointers_made,1.5,"Halftime bet, not set up for halftime bets yet."
+0.28961885417988537,-115,atl,nba,-115,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points_rebounds,22.5,"Halftime bet, not set up for halftime bets yet."
+0.31423689262191845,-105,atl,nba,-105,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points,19.5,"Halftime bet, not set up for halftime bets yet."
+0.12972790845518062,-110,atl,nba,-110,bet365,under,0d 0m,onyeka okongwu,miami heat @ atlanta hawks,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.10266849119466877,-160,mia,nba,-160,bet365,under,0d 0m,tyler herro,miami heat @ atlanta hawks,ht_steals,1.5,"Halftime bet, not set up for halftime bets yet."
+0.10038990532221351,-115,mia,nba,-115,bet365,under,0d 0m,tyler herro,miami heat @ atlanta hawks,ht_points_assists,26.5,"Halftime bet, not set up for halftime bets yet."
+0.1418755485466881,-125,mia,nba,-120,bet365,under,0d 0m,tyler herro,miami heat @ atlanta hawks,ht_points,20.5,"Halftime bet, not set up for halftime bets yet."
+0.3076010673475756,-125,atl,nba,-115,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points_assists,30.5,"Halftime bet, not set up for halftime bets yet."
+0.31029430518459894,-105,atl,nba,-105,bet365,under,0d 0m,trae young,miami heat @ atlanta hawks,ht_points_rebounds_assists,32.5,"Halftime bet, not set up for halftime bets yet."
+0.15682051282051238,-120,por,nba,-120,bet365,under,0m,scoot henderson,portland trail blazers @ utah jazz,steals,1.5,successful bet
+0.1951896456765187,104,por,nba,120,bet365,under,0m,toumani camara,portland trail blazers @ utah jazz,steals,1.5,successful bet
+0.10933974935955226,280,por,nba,280,bet365,over,0m,shaedon sharpe,portland trail blazers @ utah jazz,blocks,0.5,successful bet
+0.25218911523259285,132,uta,nba,132,bet365,under,0m,kj martin,portland trail blazers @ utah jazz,steals,0.5,Failed to confirm bet placement
+0.25218911523259285,132,uta,nba,132,bet365,under,0m,kj martin,portland trail blazers @ utah jazz,steals,0.5,Failed to confirm bet placement
+0.25218911523259285,132,uta,nba,132,bet365,under,0m,kj martin,portland trail blazers @ utah jazz,steals,0.5,Failed to confirm bet placement
+0.30481632067074377,-120,uta,nba,-120,bet365,under,0m,keyonte george,portland trail blazers @ utah jazz,turnovers,3.5,Failed to place bet
+0.2373523785631403,114,uta,nba,132,bet365,under,0m,johnny juzang,portland trail blazers @ utah jazz,turnovers,0.5,"Bet not made, could not find player johnny juzang"
+0.1462142950650907,100,uta,nba,100,bet365,under,0m,kj martin,portland trail blazers @ utah jazz,three_pointers_made,0.5,successful bet
+0.10848185148185233,135,sac,nba,135,bet365,over,53m,malik monk,charlotte hornets @ sacramento kings,three_pointers_made,2.5,successful bet
+0.12683634448191636,-130,min,nba,-125,bet365,under,0d 0m,nickeil alexander-walker,minnesota timberwolves @ oklahoma city thunder,ht_points_assists,12.5,"Halftime bet, not set up for halftime bets yet."
+0.15500867272969956,-125,min,nba,-115,bet365,under,0d 0m,nickeil alexander-walker,minnesota timberwolves @ oklahoma city thunder,ht_points_rebounds_assists,15.5,"Halftime bet, not set up for halftime bets yet."
+0.17376468851471877,-140,min,nba,-130,bet365,under,0d 0m,nickeil alexander-walker,minnesota timberwolves @ oklahoma city thunder,ht_points_rebounds,13.5,"Halftime bet, not set up for halftime bets yet."
+0.17313059913059833,135,min,nba,135,bet365,under,0d 0m,nickeil alexander-walker,minnesota timberwolves @ oklahoma city thunder,ht_turnovers,1.5,"Halftime bet, not set up for halftime bets yet."
+0.22057603142641388,105,min,nba,110,bet365,under,0d 0m,nickeil alexander-walker,minnesota timberwolves @ oklahoma city thunder,ht_points,9.5,"Halftime bet, not set up for halftime bets yet."
+0.1275219780219789,188,uta,nba,190,bet365,under,-6m,kyle filipowski,portland trail blazers @ utah jazz,three_pointers_made,0.5,successful bet
+0.2065928546162018,145,por,nba,160,bet365,under,-6m,anfernee simons,portland trail blazers @ utah jazz,steals,0.5,successful bet
+0.24731568431568374,132,uta,nba,132,bet365,under,-6m,johnny juzang,portland trail blazers @ utah jazz,turnovers,0.5,successful bet
+0.11197202797202747,110,uta,nba,110,bet365,under,-6m,johnny juzang,portland trail blazers @ utah jazz,steals,0.5,successful bet
+0.25574625374625315,132,uta,nba,132,bet365,under,-6m,kj martin,portland trail blazers @ utah jazz,steals,0.5,successful bet
+0.24399999999999972,-120,uta,nba,-120,bet365,under,-6m,keyonte george,portland trail blazers @ utah jazz,turnovers,3.5,successful bet
+0.5152800000000002,950,por,nba,950,bet365,side,-6m,anfernee simons,portland trail blazers @ utah jazz,first_basket,0.0,successful bet
