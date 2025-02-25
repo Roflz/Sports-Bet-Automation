@@ -32,7 +32,7 @@ A Python-based script that automates placing bets on Bet365 by continuously moni
 
 2. **Navigate to the Repository Directory:**
    ```bash
-   cd <repository-url>
+   cd <repository-directory>
 
 3. **Install Required Dependencies:**
    ```bash
