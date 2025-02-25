@@ -43,7 +43,7 @@ A Python-based script that automates placing bets on Bet365 by continuously moni
 Run the script from the command line and optionally specify the bet amounts:
 
   ```bash
-  python your_script.py --bet_amount 5 --bet_amount_first_basket 2
+  python main.py --bet_amount 5 --bet_amount_first_basket 2
 
 If no arguments are provided, the script defaults to:
 
