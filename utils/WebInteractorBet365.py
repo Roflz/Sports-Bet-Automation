@@ -1,5 +1,6 @@
 import os
 
+from config import BET365_USER, BET365_PASS
 from utils.control_state import control_state
 from utils.ControlMeta import ControlMeta
 from utils.WebInteractor import WebInteractor
@@ -12,8 +13,8 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         self.sportsbook = 'bet365'
         self.url = "https://www.co.bet365.com/#/HO/"
         self.window_name = 'bet365'
-        self.username = "ROTFLEZ"
-        self.password = "56dFLJ4QvbHcz2e"
+        self.username = BET365_USER
+        self.password = BET365_PASS
         control_state.set_web_interactor_bet365(self)  # Set the instance globally
 
     def login_bet365(self):
@@ -57,7 +58,8 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
         # Check if the player's image exists in the folder
         player_image_path = os.path.join(players_folder, f"{player}.png")
         if not os.path.exists(player_image_path):
-            failure_message = f"Player image not found for {player} from team {bet_dict['Team']}."
+            failure_message = (f"Player image not found for {player} from team {bet_dict['Team']}.\n"
+                               f"See readme at https://github.com/Roflz/Sports-Bet-Automation for instructions to resolve.")
             if not wait_for_resolution(failure_message, bet_dict=bet_dict):
                 return False
 
@@ -106,8 +108,10 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
 
         error_message = f"Bet not made, odds don't match for {player}\n{expected_odds}\n{actual_odds}"
 
-        if not wait_for_resolution(error_message, bet_dict=bet_dict):
-            return False
+        # if not wait_for_resolution(error_message, bet_dict=bet_dict):
+        #     return False
+        append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv",
+                           f"odds don't match for {player}\n{expected_odds}\n{actual_odds}")
         return False
 
     def wait_for_place_bet_button_to_be_visible(self, window_name=None, timeout=10, threshold=0.8):
@@ -162,6 +166,20 @@ class WebInteractorBet365(WebInteractor, metaclass=ControlMeta):
                 if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\bet_placed_x_button.png", bet_dict,
                                                               "Failed to confirm bet placement", timeout=10,
                                                               threshold=0.98):
+                    if wait_for_control_to_be_visible(f"{CONTROLS}\\bet365\\exceed_max_wager.png"):
+                        if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\update_wager.png", bet_dict,
+                                                              "Failed updating wager due to limits bet placement", timeout=10,
+                                                              threshold=0.98) or self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\place_bet_button.png",
+                                                                      bet_dict,
+                                                                      "Failed to place bet"):
+                            return
+                    elif wait_for_control_to_be_visible([f"{CONTROLS}\\bet365\\availability_changed.png", f"{CONTROLS}\\bet365\\odds_changed.png"]):
+                        if not self.wait_and_click_log_failure_to_csv(f"{CONTROLS}\\bet365\\price_changed_x.png", bet_dict,
+                                                              "Couldn't find X to cancel after availability of bet changed", timeout=10,
+                                                              threshold=0.90):
+                            return
+                        append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv",
+                                           "Availability of bet changed.")
                     return
         append_dict_to_csv(bet_dict, f"results\\results_{datetime.today().strftime('%Y-%m-%d')}.csv", "successful bet")
         return

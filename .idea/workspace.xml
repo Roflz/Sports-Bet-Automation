@@ -4,43 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5715df2-5c93-416d-b110-9703eec2bde6" name="Changes" comment="Adding results folder to git">
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/aaron nesmith.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/amir coffey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/bogdan bogdanovic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/cameron payne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/davion mitchell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/donovan clingan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/gary payton ii.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/giannis antetokounmpo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/gui santos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/jalen brunson.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/jimmy butler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/jusuf nurkic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/kevin huerter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/kris dunn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/lamelo ball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/luguentz dort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/moussa diabate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/naji marshall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/tre jones.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/zach collins.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/bet365/update_wager.png" afterDir="false" />
+    <list default="true" id="c5715df2-5c93-416d-b110-9703eec2bde6" name="Changes" comment="commit from couch">
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/exceed_max_wager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/caris levert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/carlton carrington.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/day'ron sharpe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/duncan robinson.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/georges niang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/isaiah hartenstein.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/johnny juzang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/jordan poole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/kj martin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/kyshawn george.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/marcus smart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/mouhamed gueye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/scoot henderson.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/terance mann.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/terrence shannon jr..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/trendon watford.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/players/tyrese martin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controls/bet365/nba/update_wager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bets.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/login/login_x.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/login/login_x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/1q_assists_filter_selector.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/1q_assists_filter_selector.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/1q_assists.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/1q_assists.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/assists.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/assists.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/first_basket.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/first_basket.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/points.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/points.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/points_rebounds_assists.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/rebounds.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/rebounds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/steals.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/steals.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls/bet365/nba/props/three_pointers_made.png" beforeDir="false" afterPath="$PROJECT_DIR$/controls/bet365/nba/props/three_pointers_made.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/annotated_output.png" beforeDir="false" afterPath="$PROJECT_DIR$/temp/annotated_output.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/window_screenshot.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/temp/window_screenshot.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/ControlMeta.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ControlMeta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/WebInteractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/WebInteractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/WebInteractorBet365.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/WebInteractorBet365.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
     </list>
@@ -83,19 +73,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.bet365.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mahnr/PycharmProjects/Sports-Bet-Automation/utils/utils.py&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.bet365.executor": "Debug",
+    "Python.main.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/mahnr/PycharmProjects/Sports-Bet-Automation/controls/bet365/nba"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mahnr\PycharmProjects\Sports-Bet-Automation\controls\bet365\nba" />
       <recent name="C:\Users\mahnr\PycharmProjects\Sports-Bet-Automation\results" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -168,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739129101638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit from couch">
+      <option name="closed" value="true" />
+      <created>1740393330763</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740393330763</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit from couch">
+      <option name="closed" value="true" />
+      <created>1740393368009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740393368009</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,7 +193,8 @@
     <MESSAGE value="Bet365 working good for prototype. Started on fanduel" />
     <MESSAGE value="Bet365 working nearly automatically. Pauses still in place for debugging. Still suggest babysitting while running. &#10;Needs to fix:&#10;fix double refresh on random logout&#10;increase timing for location reset&#10;handle bad refresh&#10;handle_bet_changed needs to refresh and start at the next bet&#10;loop to automate bet resets needs some work&#10;bug introduced to auto-login, needs work" />
     <MESSAGE value="Adding results folder to git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding results folder to git" />
+    <MESSAGE value="commit from couch" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit from couch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -202,9 +210,14 @@
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/WebInteractorBet365.py</url>
-          <line>131</line>
-          <option name="timeStamp" value="137" />
+          <line>156</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

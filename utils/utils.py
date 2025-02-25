@@ -936,7 +936,7 @@ def send_sms_via_email(subject, message):
     msg["To"] = sms_gateway
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.set_debuglevel(1)
+    # server.set_debuglevel(1)
     server.starttls()
     server.login(email_sender, email_password)
     server.sendmail(email_sender, sms_gateway, message)

@@ -33,7 +33,7 @@ def toggle_pause():
     control_flags["pause"] = not control_flags["pause"]
     # Toggle pause state
     if control_flags["pause"]:
-        print("Script Paused... Press Shift+P to Resume")
+        print("Script Paused... Press Alt+P to Resume")
     else:
         print("Script Resumed!")
 

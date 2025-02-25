@@ -1,0 +1,14 @@
+# requirements.txt
+
+keyboard
+mss
+numpy
+psutil
+pyautogui
+pytesseract
+opencv-python
+pywin32
+pygetwindow
+Pillow
+pywinauto
+requests
