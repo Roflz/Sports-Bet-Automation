@@ -22,21 +22,24 @@ A Python-based script that automates placing bets on Bet365 by continuously moni
   - `DataHandler.py`
   - `utils.py`
 
-*(Ensure you have these dependencies installed, either via a `requirements.txt` or manually.)*
+*(Ensure you have these dependencies installed, either via a `requirements.txt` file or manually.)*
 
 ## Installation
 
 1. **Clone the Repository:**
    ```bash
    git clone <repository-url>
+   ```
 
 2. **Navigate to the Repository Directory:**
    ```bash
    cd <repository-directory>
+   ```
 
 3. **Install Required Dependencies:**
    ```bash
    pip install -r requirements.txt
+   ```
 
 ### Update Your Credentials
 
@@ -48,18 +51,20 @@ For example, add the following lines to `config.py`:
 # config.py
 
 # Your sportsbook credentials
-BET365_ = "your_bet365_username"
-PASSWORD_BET365 = "your_bet365_password"
+BET365_USER = "your_bet365_username"
+BET365_PASS = "your_bet365_password"
 
 USERNAME_FANDUEL = "your_fanduel_username"
 PASSWORD_FANDUEL = "your_fanduel_password"
+```
 
 ## Usage
 
 Run the script from the command line and optionally specify the bet amounts:
 
-  ```bash
-  python main.py --bet_amount 5 --bet_amount_first_basket 2
+```bash
+python main.py --bet_amount 5 --bet_amount_first_basket 2
+```
 
 If no arguments are provided, the script defaults to:
 
