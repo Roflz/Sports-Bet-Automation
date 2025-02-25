@@ -38,6 +38,22 @@ A Python-based script that automates placing bets on Bet365 by continuously moni
    ```bash
    pip install -r requirements.txt
 
+### Update Your Credentials
+
+Before running the application, please update your credentials in the `config.py` file. This file is used to store your username and password for the respective sportsbook accounts.
+
+For example, add the following lines to `config.py`:
+
+```python
+# config.py
+
+# Your sportsbook credentials
+BET365_ = "your_bet365_username"
+PASSWORD_BET365 = "your_bet365_password"
+
+USERNAME_FANDUEL = "your_fanduel_username"
+PASSWORD_FANDUEL = "your_fanduel_password"
+
 ## Usage
 
 Run the script from the command line and optionally specify the bet amounts:
